@@ -796,7 +796,9 @@ function showOnboarding(force) {
 /* ================= Старт ================= */
 applyTheme(); refreshBadges(); show('home');
 setTimeout(() => { const s = $('#splash'); s.classList.add('hide'); setTimeout(() => { s.remove(); showOnboarding(); }, 500); }, 1300);
-if ('serviceWorker' in navigator && location.protocol.startsWith('http') && location.hostname !== 'localhost') navigator.serviceWorker.register('sw.js').catch(() => {});
+if ('serviceWorker' in navigator && location.protocol === 'https:') {
+  navigator.serviceWorker.register('sw.js', {updateViaCache:'none'}).then(registration => registration.update()).catch(() => {});
+}
 
 
 
