@@ -1,0 +1,12 @@
+{
+  "name": "Где дешевле",
+  "short_name": "Где дешевле",
+  "description": "Сравнение цен на продукты в магазинах рядом: цена + расстояние",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#031a16",
+  "theme_color": "#031a16",
+  "icons": [{ "src": "logo.png", "sizes": "192x192", "type": "image/png" }]
+}
