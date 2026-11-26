@@ -381,6 +381,7 @@ const R = {
 
 let searchRequest = 0;
 const publicApiBase = window.GDECHEAPLY_API_BASE || '';
+const publicApiHeaders = /(?:\.tuna\.am|\.tuna\.free)$/.test(new URL(publicApiBase || location.origin).hostname) ? {'tuna-skip-browser-warning':'true'} : {};
 async function renderResults(q) {
   const request = ++searchRequest;
   if (q.trim().length < 2) { window.renderReactScreen('results', {query:q, products:[], message:'Введите не менее двух символов'}); return; }
@@ -388,7 +389,7 @@ async function renderResults(q) {
   try {
     if (!publicApiBase && !['localhost','127.0.0.1'].includes(location.hostname)) throw new Error('Сервер не подключён');
     const params = new URLSearchParams({q});
-    const [response, unifiedResponse] = await Promise.all([fetch(publicApiBase + '/api/public/products?' + params, {signal:AbortSignal.timeout(12000)}), fetch(publicApiBase + '/api/public/unified-products?' + params, {signal:AbortSignal.timeout(12000)})]);
+    const [response, unifiedResponse] = await Promise.all([fetch(publicApiBase + '/api/public/products?' + params, {headers:publicApiHeaders,signal:AbortSignal.timeout(12000)}), fetch(publicApiBase + '/api/public/unified-products?' + params, {headers:publicApiHeaders,signal:AbortSignal.timeout(12000)})]);
     if (!response.ok || !unifiedResponse.ok) throw new Error('API недоступен');
     const [data, unified] = await Promise.all([response.json(), unifiedResponse.json()]);
     const covered = new Set(unified.items.flatMap(item => (item.covered_entry_ids || []).map(id => 'inventory-' + id)));
@@ -499,7 +500,7 @@ async function allStores(c) {
 async function fetchStores(c) {
   try {
     const params = new URLSearchParams({lat: c.lat, lon: c.lng, radius_m: 5000});
-    const response = await fetch(`${API_URL}/api/public/stores/nearby?${params}`);
+    const response = await fetch(`${API_URL}/api/public/stores/nearby?${params}`, {headers:publicApiHeaders});
     if (!response.ok) throw new Error('API unavailable');
     const data = await response.json();
     if (!Array.isArray(data.items)) throw new Error('Invalid response');
