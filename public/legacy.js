@@ -386,15 +386,16 @@ async function renderResults(q) {
   if (q.trim().length < 2) { window.renderReactScreen('results', {query:q, products:[], message:'Введите не менее двух символов'}); return; }
   window.renderReactScreen('results', {query:q, products:[], message:'Ищем в базе…'});
   try {
+    if (!publicApiBase && !['localhost','127.0.0.1'].includes(location.hostname)) throw new Error('Сервер не подключён');
     const params = new URLSearchParams({q});
-    const [response, unifiedResponse] = await Promise.all([fetch(publicApiBase + '/api/public/products?' + params), fetch(publicApiBase + '/api/public/unified-products?' + params)]);
+    const [response, unifiedResponse] = await Promise.all([fetch(publicApiBase + '/api/public/products?' + params, {signal:AbortSignal.timeout(12000)}), fetch(publicApiBase + '/api/public/unified-products?' + params, {signal:AbortSignal.timeout(12000)})]);
     if (!response.ok || !unifiedResponse.ok) throw new Error('API недоступен');
     const [data, unified] = await Promise.all([response.json(), unifiedResponse.json()]);
     const covered = new Set(unified.items.flatMap(item => (item.covered_entry_ids || []).map(id => 'inventory-' + id)));
     const products = [...unified.items, ...data.items.filter(item => !covered.has(item.id))].map(item => ({...item, image_url:item.image_url && item.image_url.startsWith('/api/public/') ? publicApiBase + item.image_url : item.image_url}));
     if (request === searchRequest) window.renderReactScreen('results', {query:q, products, message:products.length ? 'Цены по источникам; наличие и цена по адресу магазина не подтверждены.' : 'Предложения не найдены или ещё не загружены в базу.'});
   } catch (error) {
-    if (request === searchRequest) window.renderReactScreen('results', {query:q, products:[], message:'Не удалось подключиться к базе. Попробуйте позже.'});
+    if (request === searchRequest) window.renderReactScreen('results', {query:q, products:[], message:'Сервер товаров временно недоступен. Попробуйте повторить поиск позже.'});
   }
 }
 function renderStoreGrid(sid, q) {
