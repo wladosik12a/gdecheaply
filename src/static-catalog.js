@@ -6,7 +6,7 @@ const read = path => fetch(`${base}data/${path}`).then(r => {
   return r.json();
 });
 const products = () => productsPromise ||= read('products.json').then(items => items.map(item => ({
-  ...item, image_url: item.image_url ? new URL(item.image_url, document.baseURI).href : null,
+  ...item, has_local_photo: !!item.image_url && item.image_url.startsWith('product-images/'), image_url: item.image_url ? new URL(item.image_url, document.baseURI).href : null,
 })));
 const normalize = value => (value || '').toLocaleLowerCase('ru').replaceAll('ё', 'е').trim();
 
@@ -17,7 +17,14 @@ window.staticCatalog = {
       (!needle || normalize(item.name).includes(needle)) &&
       (!category || category === item.category) &&
       (!store || normalize(item.store).includes(normalize(store)) || (store === 'Магнит' && item.store === 'magnit.ru') || (store === 'Пятёрочка' && item.store === '5ka.ru')));
-    if (sort !== 'default') items.sort((a, b) => {
+    items.sort((a, b) => {
+      if (sort === 'default') {
+        const photoOrder = Number(b.has_local_photo) - Number(a.has_local_photo);
+        if (photoOrder) return photoOrder;
+      }
+      const categoryOrder = Number(a.category === 'Другое') - Number(b.category === 'Другое');
+      if (categoryOrder) return categoryOrder;
+      if (sort === 'default') return 0;
       if (sort.startsWith('name')) return (sort === 'name_asc' ? 1 : -1) * a.name.localeCompare(b.name, 'ru');
       if (a.price == null) return b.price == null ? 0 : 1;
       if (b.price == null) return -1;

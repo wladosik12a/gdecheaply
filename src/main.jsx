@@ -1,6 +1,7 @@
 import Cart from './Cart.jsx';
 import './static-catalog.js';
 import { InteractiveHoverButton } from './components/ui/interactive-hover-button';
+import { SearchChip } from './components/ui/search-chip';
 import DishConveyor from './components/ui/DishConveyor.jsx';
 import AddressInput from './AddressInput.jsx';
 import React from 'react';
@@ -78,7 +79,7 @@ function Location({ locations, selected }) {
 }
 function Menu({dishes,selected}) {return <><DishConveyor dishes={dishes} selected={selected}/><div className="bar" style={{position:'static'}}><button className="btn" disabled={!selected.length} data-act="buildMenu">Составить список продуктов</button></div></>;}
 function Stores({stores}) {
- return <div className="grid2">{stores.map(s => <button key={s.id} className="card" data-go="store" data-arg={s.id} style={{padding:'22px 10px',display:'flex',flexDirection:'column',alignItems:'center',gap:12,fontSize:17,fontWeight:600,textAlign:'center'}}><img className="sb l" src={s.logo} alt={s.n} draggable="false" referrerPolicy="no-referrer" onError={e=>{e.currentTarget.style.display='none';e.currentTarget.nextSibling.style.display='grid'}}/><span className="sb l" style={{display:'none',background:s.c,placeItems:'center',color:'#fff'}}>{s.l}</span>{s.n}<span style={{fontSize:13,color:'var(--mut)',fontWeight:500}}>📍 {s.min} мин</span></button>)}</div>;
+ return <div className="grid2">{stores.map(s => <button key={s.id} className="card" data-go="store" data-arg={s.id} style={{padding:'22px 10px',display:'flex',flexDirection:'column',alignItems:'center',gap:12,fontSize:17,fontWeight:600,textAlign:'center'}}><img className="sb l" src={s.logo} alt={s.n} draggable="false" referrerPolicy="no-referrer" onError={e=>{e.currentTarget.style.display='none';e.currentTarget.nextSibling.style.display='grid'}}/><span className="sb l" style={{display:'none',background:s.c,placeItems:'center',color:'#fff'}}>{s.l}</span>{s.n}{s.id !== 'yar' && <span style={{fontSize:13,color:'var(--mut)',fontWeight:500}}>📍 {s.min} мин</span>}</button>)}</div>;
 }
 
 function History({orders}) {
@@ -87,7 +88,7 @@ function History({orders}) {
 }
 
 function Search() {
- return <><label className="search" style={{marginTop:4}}>🔎<input id="q" placeholder="Найти продукт" autoComplete="off" /></label><section className="popular-searches" aria-labelledby="popular-search-title"><h2 id="popular-search-title">Часто ищут</h2><div className="popular-search-chips">{['Хлеб','Сыр','Вода','Мороженое','Молоко'].map(t=><button key={t} className="chip" data-chip={t}>{t}</button>)}</div></section><div id="res" /></>;
+ return <><label className="search" style={{marginTop:4}}>🔎<input id="q" placeholder="Найти продукт" autoComplete="off" /></label><section className="popular-searches" aria-labelledby="popular-search-title"><h2 id="popular-search-title">Часто ищут</h2><div className="popular-search-chips">{['Хлеб','Сыр','Вода','Мороженое','Молоко'].map(t=><SearchChip key={t} data-chip={t}>{t}</SearchChip>)}</div></section><div id="res" /></>;
 }
 function ProductPhoto({url, name}) {
  const [failed, setFailed] = React.useState(false);
@@ -104,7 +105,7 @@ const resultStores = [
  {name:'Пятёрочка', match:/^(?:www\.)?5ka\.ru$|пят[её]рочка/i, logo:'https://avatars.mds.yandex.net/i?id=5fa191218fe7ede97a5f81056d610714c1b62bd9-12724437-images-thumbs&n=13', color:'#e53935', initial:'5'},
  {name:'Магнит', match:/^(?:www\.)?magnit\.ru$|магнит/i, logo:'https://avatars.mds.yandex.net/i?id=44c58d4dbda89c57059d593f0cfeae62085690fd-4881188-images-thumbs&n=13', color:'#b3121f', initial:'М'},
  {name:'Мария-Ра', match:/maria-ra\.ru|мария[-\s]?ра/i, logo:'https://avatars.mds.yandex.net/i?id=8daed0165f120c5a55e399a3166613c4ac59a5be-5016868-images-thumbs&n=13', color:'#2e9b4a', initial:'М'},
- {name:'Ярче!', match:/ярче|xn--80akiai2b0bl4e/i, color:'#228b42', initial:'Я'},
+ {name:'Ярче!', match:/ярче|xn--80akiai2b0bl4e/i, logo:`${import.meta.env.BASE_URL}yarche-logo.png`, color:'#56c50b', initial:'Я'},
 ];
 function resultStore(value) {
  const raw = value || 'Источник';
@@ -155,7 +156,10 @@ function Results({query, products, message, hasMore}) {
  if (selected) return <><button className="chip" onClick={()=>setSelected(null)}>‹ Назад к результатам</button><div className="hero product-detail-hero" style={{marginTop:16}}><ProductPhoto url={selected.image_url} name={selected.name}/></div><h2 style={{marginTop:16}}>{selected.name}</h2><p className="hint">{selected.store}{sourceMethodLabel(selected.source_method) && <><br/>{sourceMethodLabel(selected.source_method)}</>}</p>{master?.offers?.length > 1 && <><div className="lbl">ЦЕНЫ В МАГАЗИНАХ</div>{master.offers.map(offer=><div className="card" key={offer.id} style={{padding:14,marginBottom:8}}><strong>{offer.store}</strong><span style={{float:'right'}}>{offer.price == null ? 'Цена неизвестна' : offer.price+' '+offer.currency}</span><div className="hint">{offer.observed_at ? 'Дата: '+offer.observed_at.slice(0,10) : 'Дата не указана'} · {offer.source_status}</div>{offer.source_url && <a href={offer.source_url} target="_blank" rel="noreferrer">Источник</a>}</div>)}</>}<div className="lbl">О ТОВАРЕ</div><p>{selected.price == null ? 'Цена неизвестна' : selected.price+' '+(selected.currency || 'RUB')}</p>{selected.observed_at && <p className="hint">Дата наблюдения: {selected.observed_at.slice(0,10)}</p>}{/молоко простоквашино пастеризованное 2[.,]5% 930\s*мл/i.test(selected.name) && <><p>Состав: молоко нормализованное.</p><div className="lbl">ПИЩЕВАЯ ЦЕННОСТЬ · НА 100 Г</div><p>54 ккал · белки 3 г · жиры 2,5 г · углеводы 4,7 г</p><p>Срок годности: 16 дней</p><a href="https://magnit.ru/product/1899800733-moloko_prostokvashino_pasterizovannoe_2_5_930ml" target="_blank" rel="noreferrer">Страница товара в Магните</a></>}</>;
  if (query.trim()) {
   const sorted = [...products];
-  if (sort !== 'default') sorted.sort((a,b)=>{
+  sorted.sort((a,b)=>{
+   if (sort === 'default') return 0;
+   const categoryOrder = Number(a.category === 'Другое') - Number(b.category === 'Другое');
+   if (categoryOrder) return categoryOrder;
    if (sort.startsWith('name')) return (sort === 'name_asc' ? 1 : -1)*a.name.localeCompare(b.name,'ru');
    if (a.price == null) return b.price == null ? 0 : 1;
    if (b.price == null) return -1;

@@ -32,14 +32,16 @@ const PERSON = '<svg viewBox="0 0 24 24" width="58%" height="58%" fill="currentC
 /* ================= Данные ================= */
 const TIME_COST = 1.5; // «цена времени»: сколько ₽ стоит одна минута дороги. Меняется в одном месте.
 const STORES = [
-  {id:'fix', n:'Fix Price', c:'#1e6fd9', l:'F'},
-  {id:'mar', n:'Мария-Ра', c:'#2e9b4a', l:'М'},
-  {id:'pya', n:'Пятёрочка', c:'#e53935', l:'5'},
+  {id:'yar', n:'Ярче!', c:'#56c50b', l:'Я'},
   {id:'mag', n:'Магнит', c:'#b3121f', l:'М'},
-  {id:'chi', n:'Чижик', c:'#e9a21b', l:'Ч'}
+  {id:'pya', n:'Пятёрочка', c:'#e53935', l:'5'},
+  {id:'mar', n:'Мария-Ра', c:'#2e9b4a', l:'М'},
+  {id:'chi', n:'Чижик', c:'#e9a21b', l:'Ч'},
+  {id:'fix', n:'Fix Price', c:'#1e6fd9', l:'F'}
 ];
 /* Логотипы магазинов: ссылка на картинку или data:image/png;base64,... Используются и в приложении, и на карте. Если картинка не загрузилась, показывается цветной значок с буквой. */
 const STORE_PNG = {
+  yar: new URL('yarche-logo.png', document.baseURI).href,
   fix: 'https://avatars.mds.yandex.net/i?id=4decabb239d7c8bc33ec6e81aed969ec24cfe04f-5683440-images-thumbs&n=13',
   mar: 'https://avatars.mds.yandex.net/i?id=8daed0165f120c5a55e399a3166613c4ac59a5be-5016868-images-thumbs&n=13',
   pya: 'https://avatars.mds.yandex.net/i?id=5fa191218fe7ede97a5f81056d610714c1b62bd9-12724437-images-thumbs&n=13',
@@ -341,10 +343,10 @@ const R = {
   store(sid) {
     $('#storeTitle').textContent = SM[sid].n;
     $('#storeBody').innerHTML = `
-      <div class="card" style="display:flex;align-items:center;gap:14px;padding:14px">${sb(sid, 'm')}<div style="font-size:17px;font-weight:600;flex:1">${SM[sid].n}<div class="hint" style="margin:2px 0 0">📍 ${minutes(sid)} мин от вас</div></div></div>
+      <div class="card" style="display:flex;align-items:center;gap:14px;padding:14px">${sb(sid, 'm')}<div style="font-size:17px;font-weight:600;flex:1">${SM[sid].n}${sid === 'yar' ? '' : `<div class="hint" style="margin:2px 0 0">📍 ${minutes(sid)} мин от вас</div>`}</div></div>
       <label class="search" style="margin-top:12px;height:50px">🔎<input id="sq" placeholder="Найти в магазине" autocomplete="off" data-sid="${sid}"></label>
       <div class="hrow chipsrow" id="scats" style="margin-top:6px"></div>
-      <div class="grid2" id="sgrid" style="margin-top:10px"></div><div id="storeReal"></div>`;
+      <div id="storeReal"></div><div class="grid2" id="sgrid" style="margin-top:10px"></div>`;
     STORECAT = ''; renderStoreGrid(sid, ''); loadStoreProducts(sid, '');
   },
   storeProduct(product) { window.renderReactScreen('storeProduct', {product}); },
@@ -417,7 +419,7 @@ async function renderResults(q) {
 }
 let storeProductsToken = 0, storeProductsTimer;
 function loadStoreProducts(sid, query, offset = 0, previous = []) {
-  const stores = {mag:'Магнит', pya:'Пятёрочка', mar:'Мария-Ра'};
+  const stores = {mag:'Магнит', pya:'Пятёрочка', mar:'Мария-Ра', yar:'Ярче!'};
   const target = document.getElementById('storeReal');
   if (!target) return;
   const request = ++storeProductsToken;
@@ -438,7 +440,7 @@ function renderStoreGrid(sid, q) {
   if (STORECAT && !cats.some(c => c[0] === STORECAT)) STORECAT = '';
   const sc = $('#scats'); if (sc) sc.innerHTML = `<button class="chip ${STORECAT ? '' : 'on'}" data-scat="">Все</button>` + cats.map(([k, e]) => `<button class="chip ${STORECAT === k ? 'on' : ''}" data-scat="${esc(k)}">${e} ${k}</button>`).join('') + '<span style="flex:none;width:8px"></span>' + SORTS.filter(x => x[0] !== 'best').map(([id, n]) => `<button class="chip ${CATSORT === id ? 'on' : ''}" data-ssort="${id}">${n}</button>`).join('');
   const list = sortList(base.filter(p => (!STORECAT || p.k === STORECAT) && toks.every(t => norm(p.n + ' ' + p.k).includes(t))), CATSORT, sid);
-  $('#sgrid').innerHTML = list.length ? list.map(p => gridCard(p.id, sid)).join('') : '<div class="empty" style="grid-column:1/-1"><em>🤷</em>Ничего не нашли</div>';
+  $('#sgrid').innerHTML = list.length ? list.map(p => gridCard(p.id, sid)).join('') : sid === 'yar' ? '' : '<div class="empty" style="grid-column:1/-1"><em>🤷</em>Ничего не нашли</div>';
 }
 
 /* ================= Карта: «Найти магазин» ================= */
