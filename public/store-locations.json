@@ -1,0 +1,3290 @@
+[
+  {
+    "id": 1,
+    "code": "pyaterochka",
+    "address": "Вокзальная магистраль, д. 10/1",
+    "lat": 55.032681,
+    "lng": 82.908859,
+    "source_description": "Файл пользователя: pyaterochka_osm_coords.txt (OSM указан в имени файла; источник и актуальность не проверены)",
+    "status": "review"
+  },
+  {
+    "id": 10,
+    "code": "pyaterochka",
+    "address": "ул. 25 лет Октября, д. 14/2",
+    "lat": 55.07501,
+    "lng": 82.962534,
+    "source_description": "Файл пользователя: pyaterochka_osm_coords.txt (OSM указан в имени файла; источник и актуальность не проверены)",
+    "status": "review"
+  },
+  {
+    "id": 100,
+    "code": "magnit",
+    "address": "мкр-н Олимпийской славы, д. 1/1",
+    "lat": 55.090515,
+    "lng": 83.051396,
+    "source_description": "Файл пользователя: magnit_osm_coords.txt (OSM указан в имени файла; источник и актуальность не проверены)",
+    "status": "review"
+  },
+  {
+    "id": 101,
+    "code": "magnit",
+    "address": "пр-т Дзержинского, д. 3",
+    "lat": 55.050399,
+    "lng": 82.962673,
+    "source_description": "Файл пользователя: magnit_osm_coords.txt (OSM указан в имени файла; источник и актуальность не проверены)",
+    "status": "review"
+  },
+  {
+    "id": 102,
+    "code": "magnit",
+    "address": "пр-т Дзержинского, д. 87",
+    "lat": 55.068766,
+    "lng": 83.001085,
+    "source_description": "Файл пользователя: magnit_osm_coords.txt (OSM указан в имени файла; источник и актуальность не проверены)",
+    "status": "review"
+  },
+  {
+    "id": 103,
+    "code": "magnit",
+    "address": "просп. Дзержинского, 9",
+    "lat": 55.052561,
+    "lng": 82.967157,
+    "source_url": "https://yandex.ru/maps/org/magnit/1583660352/",
+    "source_description": "Яндекс Карты, карточка филиала",
+    "status": "listed",
+    "checked_at": "2026-11-27"
+  },
+  {
+    "id": 104,
+    "code": "magnit",
+    "address": "территория Военного Городка, д. 770/1",
+    "lat": 55.031019,
+    "lng": 82.951165,
+    "source_description": "Файл пользователя: magnit_osm_coords.txt (OSM указан в имени файла; источник и актуальность не проверены)",
+    "status": "review"
+  },
+  {
+    "id": 105,
+    "code": "magnit",
+    "address": "ул. 3-го Интернационала, д. 155",
+    "lat": 55.007162,
+    "lng": 82.958947,
+    "source_description": "Файл пользователя: magnit_osm_coords.txt (OSM указан в имени файла; источник и актуальность не проверены)",
+    "status": "review"
+  },
+  {
+    "id": 106,
+    "code": "magnit",
+    "address": "ул. 9 Гвардейской Дивизии, д. 9а",
+    "lat": 54.966217,
+    "lng": 82.849307,
+    "source_description": "Файл пользователя: magnit_osm_coords.txt (OSM указан в имени файла; источник и актуальность не проверены)",
+    "status": "review"
+  },
+  {
+    "id": 107,
+    "code": "magnit",
+    "address": "ул. Авиастроителей, д. 1/3",
+    "lat": 55.067005,
+    "lng": 82.96004,
+    "source_description": "Файл пользователя: magnit_osm_coords.txt (OSM указан в имени файла; источник и актуальность не проверены)",
+    "status": "review"
+  },
+  {
+    "id": 108,
+    "code": "magnit",
+    "address": "ул. Богдана Хмельницкого, 1",
+    "lat": 55.066457,
+    "lng": 82.934448,
+    "source_description": "Яндекс Карты, карточка филиала",
+    "source_url": "https://yandex.ru/maps/org/magnit/174175949331/",
+    "status": "listed",
+    "checked_at": "2026-11-27"
+  },
+  {
+    "id": 109,
+    "code": "magnit",
+    "address": "ул. Большевистская, д. 171",
+    "lat": 54.995891,
+    "lng": 82.969103,
+    "source_description": "Файл пользователя: magnit_osm_coords.txt (OSM указан в имени файла; источник и актуальность не проверены)",
+    "status": "review"
+  },
+  {
+    "id": 11,
+    "code": "pyaterochka",
+    "address": "ул. 25 лет Октября, 5, этаж 1",
+    "lat": 55.069944,
+    "lng": 82.968698,
+    "source_description": "Яндекс Карты, карточка филиала",
+    "source_url": "https://yandex.ru/maps/org/pyatyorochka/219674333104/",
+    "status": "listed",
+    "checked_at": "2026-11-27"
+  },
+  {
+    "id": 110,
+    "code": "magnit",
+    "address": "ул. Бориса Богаткова, д. 138",
+    "lat": 55.023602,
+    "lng": 82.960176,
+    "source_description": "Файл пользователя: magnit_osm_coords.txt (OSM указан в имени файла; источник и актуальность не проверены)",
+    "status": "review"
+  },
+  {
+    "id": 111,
+    "code": "magnit",
+    "address": "ул. Бориса Богаткова, д. 163/11",
+    "lat": 55.033138,
+    "lng": 82.970646,
+    "source_description": "Файл пользователя: magnit_osm_coords.txt (OSM указан в имени файла; источник и актуальность не проверены)",
+    "status": "review"
+  },
+  {
+    "id": 112,
+    "code": "magnit",
+    "address": "ул. Бориса Богаткова, 253/4",
+    "lat": 55.044523,
+    "lng": 82.986901,
+    "source_url": "https://yandex.ru/maps/org/magnit/1659941740/",
+    "source_description": "Яндекс Карты, карточка филиала",
+    "status": "listed",
+    "checked_at": "2026-11-27"
+  },
+  {
+    "id": 113,
+    "code": "magnit",
+    "address": "Вертковская ул., 38",
+    "lat": 54.975362,
+    "lng": 82.873173,
+    "source_url": "https://yandex.ru/maps/org/magnit/183942914087/",
+    "source_description": "Яндекс Карты, карточка филиала",
+    "status": "listed",
+    "checked_at": "2026-11-27"
+  },
+  {
+    "id": 114,
+    "code": "magnit",
+    "address": "Вилюйская ул., 18",
+    "lat": 54.999223,
+    "lng": 83.006991,
+    "source_url": "https://yandex.ru/maps/org/magnit/212898559408/",
+    "source_description": "Яндекс Карты, карточка филиала",
+    "status": "listed",
+    "checked_at": "2026-11-27"
+  },
+  {
+    "id": 115,
+    "code": "magnit",
+    "address": "ул. Владимира Высоцкого, д. 41А",
+    "lat": 55.031631,
+    "lng": 83.023085,
+    "source_description": "Файл пользователя: magnit_osm_coords.txt (OSM указан в имени файла; источник и актуальность не проверены)",
+    "status": "review"
+  },
+  {
+    "id": 116,
+    "code": "magnit",
+    "address": "ул. Владимира Высоцкого, д. 45",
+    "lat": 55.030393,
+    "lng": 83.019193,
+    "source_description": "Файл пользователя: magnit_osm_coords.txt (OSM указан в имени файла; источник и актуальность не проверены)",
+    "status": "review"
+  },
+  {
+    "id": 117,
+    "code": "magnit",
+    "address": "ул. Волховская, д. 33А",
+    "lat": 54.970378,
+    "lng": 82.839645,
+    "source_description": "Файл пользователя: magnit_osm_coords.txt (OSM указан в имени файла; источник и актуальность не проверены)",
+    "status": "review"
+  },
+  {
+    "id": 118,
+    "code": "magnit",
+    "address": "Выборная ул., 144",
+    "lat": 55.00289,
+    "lng": 83.02244,
+    "source_url": "https://yandex.ru/maps/org/magnit/1935188566/",
+    "source_description": "Яндекс Карты, карточка филиала",
+    "status": "listed",
+    "checked_at": "2026-11-27"
+  },
+  {
+    "id": 119,
+    "code": "magnit",
+    "address": "Выборная ул., 87/3",
+    "lat": 55.000473,
+    "lng": 83.010846,
+    "source_url": "https://yandex.ru/maps/org/magnit/80528680783/",
+    "source_description": "Яндекс Карты, карточка филиала",
+    "status": "listed",
+    "checked_at": "2026-11-27"
+  },
+  {
+    "id": 12,
+    "code": "pyaterochka",
+    "address": "ул. Авиастроителей, 13",
+    "lat": 55.073194,
+    "lng": 82.973517,
+    "source_description": "Яндекс Карты, карточка филиала",
+    "source_url": "https://yandex.ru/maps/org/pyatyorochka/184326250364/",
+    "status": "listed",
+    "checked_at": "2026-11-27"
+  },
+  {
+    "id": 120,
+    "code": "magnit",
+    "address": "Выборная ул., 89/8",
+    "lat": 55.002203,
+    "lng": 83.015628,
+    "source_url": "https://yandex.ru/maps/org/magnit/1794951213/",
+    "source_description": "Яндекс Карты, карточка филиала",
+    "status": "listed",
+    "checked_at": "2026-11-27"
+  },
+  {
+    "id": 121,
+    "code": "magnit",
+    "address": "Геодезическая ул., 23",
+    "lat": 54.98664,
+    "lng": 82.911208,
+    "source_description": "Яндекс Карты, карточка филиала",
+    "source_url": "https://yandex.ru/maps/org/magnit/1743025262/",
+    "status": "listed",
+    "checked_at": "2026-11-27"
+  },
+  {
+    "id": 122,
+    "code": "magnit",
+    "address": "ул. Геодезическая, д. 67",
+    "lat": 54.986678,
+    "lng": 82.912896,
+    "source_description": "Файл пользователя: magnit_osm_coords.txt (OSM указан в имени файла; источник и актуальность не проверены)",
+    "status": "review"
+  },
+  {
+    "id": 123,
+    "code": "magnit",
+    "address": "ул. Гоголя, д. 13",
+    "lat": 55.043199,
+    "lng": 82.921385,
+    "source_description": "Файл пользователя: magnit_osm_coords.txt (OSM указан в имени файла; источник и актуальность не проверены)",
+    "status": "review"
+  },
+  {
+    "id": 124,
+    "code": "magnit",
+    "address": "ул. Гоголя, 235/2",
+    "lat": 55.054567,
+    "lng": 82.979167,
+    "source_url": "https://yandex.ru/maps/org/magnit/166746679540/",
+    "source_description": "Яндекс Карты, карточка филиала",
+    "status": "listed",
+    "checked_at": "2026-11-27"
+  },
+  {
+    "id": 125,
+    "code": "magnit",
+    "address": "ул. Гоголя, д. 51",
+    "lat": 55.044906,
+    "lng": 82.942623,
+    "source_description": "Файл пользователя: magnit_osm_coords.txt (OSM указан в имени файла; источник и актуальность не проверены)",
+    "status": "review"
+  },
+  {
+    "id": 126,
+    "code": "magnit",
+    "address": "ул. Гребенщикова, д. 4",
+    "lat": 55.106141,
+    "lng": 82.938344,
+    "source_description": "Файл пользователя: magnit_osm_coords.txt (OSM указан в имени файла; источник и актуальность не проверены)",
+    "status": "review"
+  },
+  {
+    "id": 127,
+    "code": "magnit",
+    "address": "ул. Даргомыжского, д. 8Ак1",
+    "lat": 55.079186,
+    "lng": 82.933666,
+    "source_description": "Файл пользователя: magnit_osm_coords.txt (OSM указан в имени файла; источник и актуальность не проверены)",
+    "status": "review"
+  },
+  {
+    "id": 128,
+    "code": "magnit",
+    "address": "ул. Демьяна Бедного, д. 55",
+    "lat": 55.048688,
+    "lng": 82.934684,
+    "source_description": "Файл пользователя: magnit_osm_coords.txt (OSM указан в имени файла; источник и актуальность не проверены)",
+    "status": "review"
+  },
+  {
+    "id": 129,
+    "code": "magnit",
+    "address": "ул. Добролюбова, д. 162/1",
+    "lat": 55.030454,
+    "lng": 82.984445,
+    "source_description": "Файл пользователя: magnit_osm_coords.txt (OSM указан в имени файла; источник и актуальность не проверены)",
+    "status": "review"
+  },
+  {
+    "id": 13,
+    "code": "pyaterochka",
+    "address": "ул. Адриена Лежена, д. 14/1",
+    "lat": 55.043656,
+    "lng": 82.977922,
+    "source_description": "Файл пользователя: pyaterochka_osm_coords.txt (OSM указан в имени файла; источник и актуальность не проверены)",
+    "status": "review"
+  },
+  {
+    "id": 130,
+    "code": "magnit",
+    "address": "ул. Доватора, д. 31",
+    "lat": 55.038902,
+    "lng": 83.000265,
+    "source_description": "Файл пользователя: magnit_osm_coords.txt (OSM указан в имени файла; источник и актуальность не проверены)",
+    "status": "review"
+  },
+  {
+    "id": 131,
+    "code": "magnit",
+    "address": "ул. Дунаевского, д. 1",
+    "lat": 55.100016,
+    "lng": 82.972622,
+    "source_description": "Файл пользователя: magnit_osm_coords.txt (OSM указан в имени файла; источник и актуальность не проверены)",
+    "status": "review"
+  },
+  {
+    "id": 132,
+    "code": "magnit",
+    "address": "ул. Дуси Ковальчук, 272",
+    "lat": 55.061182,
+    "lng": 82.918639,
+    "source_description": "Яндекс Карты, карточка филиала",
+    "source_url": "https://yandex.ru/maps/org/magnit/1625040715/",
+    "status": "listed",
+    "checked_at": "2026-11-27"
+  },
+  {
+    "id": 133,
+    "code": "magnit",
+    "address": "ул. Дуси Ковальчук, 91",
+    "lat": 55.056281,
+    "lng": 82.903572,
+    "source_description": "Яндекс Карты, карточка филиала",
+    "source_url": "https://yandex.ru/maps/org/magnit/105286100849/",
+    "status": "listed",
+    "checked_at": "2026-11-27"
+  },
+  {
+    "id": 134,
+    "code": "magnit",
+    "address": "ул. Есенина, д. 26",
+    "lat": 55.039153,
+    "lng": 82.992438,
+    "source_description": "Файл пользователя: magnit_osm_coords.txt (OSM указан в имени файла; источник и актуальность не проверены)",
+    "status": "review"
+  },
+  {
+    "id": 135,
+    "code": "magnit",
+    "address": "ул. Жуковского, д. 111",
+    "lat": 55.061371,
+    "lng": 82.892427,
+    "source_description": "Файл пользователя: magnit_osm_coords.txt (OSM указан в имени файла; источник и актуальность не проверены)",
+    "status": "review"
+  },
+  {
+    "id": 136,
+    "code": "magnit",
+    "address": "ул. Забалуева, 21/1",
+    "lat": 54.988594,
+    "lng": 82.827601,
+    "source_url": "https://yandex.ru/maps/org/magnit/145383753573/",
+    "source_description": "Яндекс Карты, карточка филиала",
+    "status": "listed",
+    "checked_at": "2026-11-27"
+  },
+  {
+    "id": 137,
+    "code": "magnit",
+    "address": "ул. Залесского, д. 6",
+    "lat": 55.06763,
+    "lng": 82.931531,
+    "source_description": "Файл пользователя: magnit_osm_coords.txt (OSM указан в имени файла; источник и актуальность не проверены)",
+    "status": "review"
+  },
+  {
+    "id": 138,
+    "code": "magnit",
+    "address": "ул. Залесского, 8/1",
+    "lat": 55.069145,
+    "lng": 82.925095,
+    "source_url": "https://yandex.ru/maps/org/magnit/89142707703/",
+    "source_description": "Яндекс Карты, карточка филиала",
+    "status": "listed",
+    "checked_at": "2026-11-27"
+  },
+  {
+    "id": 139,
+    "code": "magnit",
+    "address": "ул. Заслонова, д. 13/1",
+    "lat": 55.049225,
+    "lng": 83.03305,
+    "source_description": "Файл пользователя: magnit_osm_coords.txt (OSM указан в имени файла; источник и актуальность не проверены)",
+    "status": "review"
+  },
+  {
+    "id": 14,
+    "code": "pyaterochka",
+    "address": "ул. Блюхера, д. 39",
+    "lat": 54.98768,
+    "lng": 82.895647,
+    "source_description": "Файл пользователя: pyaterochka_osm_coords.txt (OSM указан в имени файла; источник и актуальность не проверены)",
+    "status": "review"
+  },
+  {
+    "id": 140,
+    "code": "magnit",
+    "address": "ул. Земнухова, д. 15",
+    "lat": 55.112055,
+    "lng": 82.956305,
+    "source_description": "Файл пользователя: magnit_osm_coords.txt (OSM указан в имени файла; источник и актуальность не проверены)",
+    "status": "review"
+  },
+  {
+    "id": 141,
+    "code": "magnit",
+    "address": "ул. Зорге, д. 219А",
+    "lat": 54.929774,
+    "lng": 82.918063,
+    "source_description": "Файл пользователя: magnit_osm_coords.txt (OSM указан в имени файла; источник и актуальность не проверены)",
+    "status": "review"
+  },
+  {
+    "id": 142,
+    "code": "magnit",
+    "address": "ул. Зорге, д. 77А",
+    "lat": 54.93765,
+    "lng": 82.913715,
+    "source_description": "Файл пользователя: magnit_osm_coords.txt (OSM указан в имени файла; источник и актуальность не проверены)",
+    "status": "review"
+  },
+  {
+    "id": 143,
+    "code": "magnit",
+    "address": "ул. Зыряновская, д. 63",
+    "lat": 55.009929,
+    "lng": 82.941998,
+    "source_description": "Файл пользователя: magnit_osm_coords.txt (OSM указан в имени файла; источник и актуальность не проверены)",
+    "status": "review"
+  },
+  {
+    "id": 144,
+    "code": "magnit",
+    "address": "ул. Игарская, д. 16",
+    "lat": 55.100178,
+    "lng": 82.941409,
+    "source_description": "Файл пользователя: magnit_osm_coords.txt (OSM указан в имени файла; источник и актуальность не проверены)",
+    "status": "review"
+  },
+  {
+    "id": 145,
+    "code": "magnit",
+    "address": "ул. Ипподромская, д. 40/3",
+    "lat": 55.054401,
+    "lng": 82.939664,
+    "source_description": "Файл пользователя: magnit_osm_coords.txt (OSM указан в имени файла; источник и актуальность не проверены)",
+    "status": "review"
+  },
+  {
+    "id": 146,
+    "code": "magnit",
+    "address": "ул. Кирова, 225",
+    "lat": 55.00808,
+    "lng": 82.966301,
+    "source_description": "Яндекс Карты, карточка филиала",
+    "source_url": "https://yandex.ru/maps/org/magnit/6059994680/",
+    "status": "listed",
+    "checked_at": "2026-11-27"
+  },
+  {
+    "id": 147,
+    "code": "magnit",
+    "address": "ул. Кирова, д. 80",
+    "lat": 55.016508,
+    "lng": 82.943352,
+    "source_description": "Файл пользователя: magnit_osm_coords.txt (OSM указан в имени файла; источник и актуальность не проверены)",
+    "status": "review"
+  },
+  {
+    "id": 148,
+    "code": "magnit",
+    "address": "Комбинатская ул., 3А",
+    "lat": 55.052511,
+    "lng": 82.974778,
+    "source_url": "https://yandex.ru/maps/org/magnit/66515266808/",
+    "source_description": "Яндекс Карты, карточка филиала",
+    "status": "listed",
+    "checked_at": "2026-11-27"
+  },
+  {
+    "id": 149,
+    "code": "magnit",
+    "address": "ул. Комсомольская, д. 2",
+    "lat": 54.955931,
+    "lng": 82.970869,
+    "source_description": "Файл пользователя: magnit_osm_coords.txt (OSM указан в имени файла; источник и актуальность не проверены)",
+    "status": "review"
+  },
+  {
+    "id": 15,
+    "code": "pyaterochka",
+    "address": "ул. Блюхера, д. 71",
+    "lat": 54.991606,
+    "lng": 82.90187,
+    "source_description": "Файл пользователя: pyaterochka_osm_coords.txt (OSM указан в имени файла; источник и актуальность не проверены)",
+    "status": "review"
+  },
+  {
+    "id": 150,
+    "code": "magnit",
+    "address": "Комсомольский просп., 24",
+    "lat": 55.03226,
+    "lng": 82.907033,
+    "source_url": "https://yandex.ru/maps/org/magnit/180406872754/",
+    "source_description": "Яндекс Карты, карточка филиала",
+    "status": "listed",
+    "checked_at": "2026-11-27"
+  },
+  {
+    "id": 151,
+    "code": "magnit",
+    "address": "ул. Короленко, д. 138",
+    "lat": 55.015693,
+    "lng": 82.968312,
+    "source_description": "Файл пользователя: magnit_osm_coords.txt (OSM указан в имени файла; источник и актуальность не проверены)",
+    "status": "review"
+  },
+  {
+    "id": 152,
+    "code": "magnit",
+    "address": "ул. Котовского, д. 11",
+    "lat": 54.991956,
+    "lng": 82.87961,
+    "source_description": "Файл пользователя: magnit_osm_coords.txt (OSM указан в имени файла; источник и актуальность не проверены)",
+    "status": "review"
+  },
+  {
+    "id": 153,
+    "code": "magnit",
+    "address": "ул. Кочубея, 7/1",
+    "lat": 55.107903,
+    "lng": 82.956784,
+    "source_url": "https://yandex.ru/maps/org/magnit/138041699020/",
+    "source_description": "Яндекс Карты, карточка филиала",
+    "status": "listed",
+    "checked_at": "2026-11-27"
+  },
+  {
+    "id": 154,
+    "code": "magnit",
+    "address": "ул. Красина, д. 54",
+    "lat": 55.042536,
+    "lng": 82.96286,
+    "source_description": "Файл пользователя: magnit_osm_coords.txt (OSM указан в имени файла; источник и актуальность не проверены)",
+    "status": "review"
+  },
+  {
+    "id": 155,
+    "code": "magnit",
+    "address": "ул. Кропоткина, д. 263А",
+    "lat": 55.056653,
+    "lng": 82.929576,
+    "source_description": "Файл пользователя: magnit_osm_coords.txt (OSM указан в имени файла; источник и актуальность не проверены)",
+    "status": "review"
+  },
+  {
+    "id": 156,
+    "code": "magnit",
+    "address": "ул. Кропоткина, 271",
+    "lat": 55.05754,
+    "lng": 82.936962,
+    "source_description": "Яндекс Карты, карточка филиала",
+    "source_url": "https://yandex.ru/maps/org/magnit/69390926059/",
+    "status": "listed",
+    "checked_at": "2026-11-27"
+  },
+  {
+    "id": 157,
+    "code": "magnit",
+    "address": "ул. Крылова, д. 1а",
+    "lat": 55.039956,
+    "lng": 82.913979,
+    "source_description": "Файл пользователя: magnit_osm_coords.txt (OSM указан в имени файла; источник и актуальность не проверены)",
+    "status": "review"
+  },
+  {
+    "id": 158,
+    "code": "magnit",
+    "address": "Кубовая ул., 106/1",
+    "lat": 55.128826,
+    "lng": 82.889697,
+    "source_url": "https://yandex.ru/maps/org/magnit/1635217279/",
+    "source_description": "Яндекс Карты, карточка филиала",
+    "status": "listed",
+    "checked_at": "2026-11-27"
+  },
+  {
+    "id": 159,
+    "code": "magnit",
+    "address": "ул. Курчатова, 3/5",
+    "lat": 55.106291,
+    "lng": 82.961784,
+    "source_url": "https://yandex.ru/maps/org/magnit/65242023233/",
+    "source_description": "Яндекс Карты, карточка филиала",
+    "status": "listed",
+    "checked_at": "2026-11-27"
+  },
+  {
+    "id": 16,
+    "code": "pyaterochka",
+    "address": "ул. Большевистская, д. 14",
+    "lat": 55.001851,
+    "lng": 82.95159,
+    "source_description": "Файл пользователя: pyaterochka_osm_coords.txt (OSM указан в имени файла; источник и актуальность не проверены)",
+    "status": "review"
+  },
+  {
+    "id": 160,
+    "code": "magnit",
+    "address": "ул. Лазурная, д. 4/1",
+    "lat": 55.03374,
+    "lng": 83.008359,
+    "source_description": "Файл пользователя: magnit_osm_coords.txt (OSM указан в имени файла; источник и актуальность не проверены)",
+    "status": "review"
+  },
+  {
+    "id": 161,
+    "code": "magnit",
+    "address": "ул. Лейтенанта Амосова, д. 69",
+    "lat": 55.159442,
+    "lng": 82.959814,
+    "source_description": "Файл пользователя: magnit_osm_coords.txt (OSM указан в имени файла; источник и актуальность не проверены)",
+    "status": "review"
+  },
+  {
+    "id": 162,
+    "code": "magnit",
+    "address": "ул. Линейная, д. 29",
+    "lat": 55.049317,
+    "lng": 82.901298,
+    "source_description": "Файл пользователя: magnit_osm_coords.txt (OSM указан в имени файла; источник и актуальность не проверены)",
+    "status": "review"
+  },
+  {
+    "id": 163,
+    "code": "magnit",
+    "address": "ул. Макаренко, д. 13/1",
+    "lat": 55.097172,
+    "lng": 82.957341,
+    "source_description": "Файл пользователя: magnit_osm_coords.txt (OSM указан в имени файла; источник и актуальность не проверены)",
+    "status": "review"
+  },
+  {
+    "id": 164,
+    "code": "magnit",
+    "address": "ул. Менделеева, 10",
+    "lat": 55.073963,
+    "lng": 82.962742,
+    "source_description": "Яндекс Карты, карточка филиала",
+    "source_url": "https://yandex.ru/maps/org/magnit/1563616775/",
+    "status": "listed",
+    "checked_at": "2026-11-27"
+  },
+  {
+    "id": 165,
+    "code": "magnit",
+    "address": "ул. Мичурина, 23",
+    "lat": 55.041135,
+    "lng": 82.921178,
+    "source_url": "https://yandex.ru/maps/org/magnit/230776227742/",
+    "source_description": "Яндекс Карты, карточка филиала",
+    "status": "listed",
+    "checked_at": "2026-11-27"
+  },
+  {
+    "id": 166,
+    "code": "magnit",
+    "address": "ул. Мясниковой, д. 22",
+    "lat": 55.107678,
+    "lng": 82.933683,
+    "source_description": "Файл пользователя: magnit_osm_coords.txt (OSM указан в имени файла; источник и актуальность не проверены)",
+    "status": "review"
+  },
+  {
+    "id": 167,
+    "code": "magnit",
+    "address": "ул. Никитина, д. 68",
+    "lat": 55.013846,
+    "lng": 82.962471,
+    "source_description": "Файл пользователя: magnit_osm_coords.txt (OSM указан в имени файла; источник и актуальность не проверены)",
+    "status": "review"
+  },
+  {
+    "id": 168,
+    "code": "magnit",
+    "address": "Новосибирская ул., 18/1",
+    "lat": 54.988898,
+    "lng": 82.843444,
+    "source_url": "https://yandex.ru/maps/org/magnit/225231248926/",
+    "source_description": "Яндекс Карты, карточка филиала",
+    "status": "listed",
+    "checked_at": "2026-11-27"
+  },
+  {
+    "id": 169,
+    "code": "magnit",
+    "address": "ул. Петухова, д. 14/1",
+    "lat": 54.940301,
+    "lng": 82.894296,
+    "source_description": "Файл пользователя: magnit_osm_coords.txt (OSM указан в имени файла; источник и актуальность не проверены)",
+    "status": "review"
+  },
+  {
+    "id": 17,
+    "code": "pyaterochka",
+    "address": "ул. Большевистская, д. 14/3",
+    "lat": 55.001851,
+    "lng": 82.95159,
+    "source_description": "Файл пользователя: pyaterochka_osm_coords.txt (OSM указан в имени файла; источник и актуальность не проверены)",
+    "status": "review"
+  },
+  {
+    "id": 170,
+    "code": "magnit",
+    "address": "ул. Петухова, д. 160",
+    "lat": 54.938417,
+    "lng": 82.946234,
+    "source_description": "Файл пользователя: magnit_osm_coords.txt (OSM указан в имени файла; источник и актуальность не проверены)",
+    "status": "review"
+  },
+  {
+    "id": 171,
+    "code": "magnit",
+    "address": "ул. Планировочная, д. 58",
+    "lat": 54.996973,
+    "lng": 82.896007,
+    "source_description": "Файл пользователя: magnit_osm_coords.txt (OSM указан в имени файла; источник и актуальность не проверены)",
+    "status": "review"
+  },
+  {
+    "id": 172,
+    "code": "magnit",
+    "address": "ул. Победы, д. 2А",
+    "lat": 55.073358,
+    "lng": 82.893441,
+    "source_description": "Файл пользователя: magnit_osm_coords.txt (OSM указан в имени файла; источник и актуальность не проверены)",
+    "status": "review"
+  },
+  {
+    "id": 173,
+    "code": "magnit",
+    "address": "Пролетарская ул., 50",
+    "lat": 55.025076,
+    "lng": 82.956208,
+    "source_url": "https://yandex.ru/maps/org/magnit/63839059243/",
+    "status": "listed",
+    "source_description": "Яндекс Карты, карточка филиала",
+    "checked_at": "2026-11-27"
+  },
+  {
+    "id": 174,
+    "code": "magnit",
+    "address": "ул. Республиканская, д. 11",
+    "lat": 55.065843,
+    "lng": 82.965741,
+    "source_description": "Файл пользователя: magnit_osm_coords.txt (OSM указан в имени файла; источник и актуальность не проверены)",
+    "status": "review"
+  },
+  {
+    "id": 175,
+    "code": "magnit",
+    "address": "ул. Романтиков, д. 1",
+    "lat": 55.024453,
+    "lng": 82.81272,
+    "source_description": "Файл пользователя: magnit_osm_coords.txt (OSM указан в имени файла; источник и актуальность не проверены)",
+    "status": "review"
+  },
+  {
+    "id": 176,
+    "code": "magnit",
+    "address": "ул. Семьи Шамшиных, д. 64",
+    "lat": 55.041856,
+    "lng": 82.930083,
+    "source_description": "Файл пользователя: magnit_osm_coords.txt (OSM указан в имени файла; источник и актуальность не проверены)",
+    "status": "review"
+  },
+  {
+    "id": 177,
+    "code": "magnit",
+    "address": "ул. Советская, д. 99",
+    "lat": 55.046805,
+    "lng": 82.911458,
+    "source_description": "Файл пользователя: magnit_osm_coords.txt (OSM указан в имени файла; источник и актуальность не проверены)",
+    "status": "review"
+  },
+  {
+    "id": 178,
+    "code": "magnit",
+    "address": "ул. Станиславского, д. 40/1",
+    "lat": 54.968988,
+    "lng": 82.873188,
+    "source_description": "Файл пользователя: magnit_osm_coords.txt (OSM указан в имени файла; источник и актуальность не проверены)",
+    "status": "review"
+  },
+  {
+    "id": 179,
+    "code": "magnit",
+    "address": "ул. Стартовая, д. 1",
+    "lat": 54.998597,
+    "lng": 82.907213,
+    "source_description": "Файл пользователя: magnit_osm_coords.txt (OSM указан в имени файла; источник и актуальность не проверены)",
+    "status": "review"
+  },
+  {
+    "id": 18,
+    "code": "pyaterochka",
+    "address": "ул. Бориса Богаткова, д. 191",
+    "lat": 55.037141,
+    "lng": 82.967459,
+    "source_description": "Файл пользователя: pyaterochka_osm_coords.txt (OSM указан в имени файла; источник и актуальность не проверены)",
+    "status": "review"
+  },
+  {
+    "id": 180,
+    "code": "magnit",
+    "address": "ул. Техническая, д. 21",
+    "lat": 55.055919,
+    "lng": 83.007563,
+    "source_description": "Файл пользователя: magnit_osm_coords.txt (OSM указан в имени файла; источник и актуальность не проверены)",
+    "status": "review"
+  },
+  {
+    "id": 181,
+    "code": "magnit",
+    "address": "ул. Тихвинская, д. 1",
+    "lat": 54.981515,
+    "lng": 82.867587,
+    "source_description": "Файл пользователя: magnit_osm_coords.txt (OSM указан в имени файла; источник и актуальность не проверены)",
+    "status": "review"
+  },
+  {
+    "id": 182,
+    "code": "magnit",
+    "address": "Троллейная ул., 21",
+    "lat": 54.984383,
+    "lng": 82.859326,
+    "source_url": "https://yandex.ru/maps/org/magnit/236411122398/",
+    "source_description": "Яндекс Карты, карточка филиала",
+    "status": "listed",
+    "checked_at": "2026-11-27"
+  },
+  {
+    "id": 183,
+    "code": "magnit",
+    "address": "ул. Тульская, д. 80",
+    "lat": 54.964419,
+    "lng": 82.873168,
+    "source_description": "Файл пользователя: magnit_osm_coords.txt (OSM указан в имени файла; источник и актуальность не проверены)",
+    "status": "review"
+  },
+  {
+    "id": 184,
+    "code": "magnit",
+    "address": "ул. Тюленина, д. 23/1",
+    "lat": 55.114414,
+    "lng": 82.937392,
+    "source_description": "Файл пользователя: magnit_osm_coords.txt (OSM указан в имени файла; источник и актуальность не проверены)",
+    "status": "review"
+  },
+  {
+    "id": 185,
+    "code": "magnit",
+    "address": "ул. Угловая, д. 11",
+    "lat": 55.027936,
+    "lng": 82.993381,
+    "source_description": "Файл пользователя: magnit_osm_coords.txt (OSM указан в имени файла; источник и актуальность не проверены)",
+    "status": "review"
+  },
+  {
+    "id": 186,
+    "code": "magnit",
+    "address": "ул. Ударная, д. 25/1",
+    "lat": 54.967579,
+    "lng": 82.863435,
+    "source_description": "Файл пользователя: magnit_osm_coords.txt (OSM указан в имени файла; источник и актуальность не проверены)",
+    "status": "review"
+  },
+  {
+    "id": 187,
+    "code": "magnit",
+    "address": "ул. Учительская, д. 46",
+    "lat": 55.083779,
+    "lng": 82.962951,
+    "source_description": "Файл пользователя: magnit_osm_coords.txt (OSM указан в имени файла; источник и актуальность не проверены)",
+    "status": "review"
+  },
+  {
+    "id": 188,
+    "code": "magnit",
+    "address": "ул. Фасадная, д. 25/1",
+    "lat": 54.983942,
+    "lng": 82.822314,
+    "source_description": "Файл пользователя: magnit_osm_coords.txt (OSM указан в имени файла; источник и актуальность не проверены)",
+    "status": "review"
+  },
+  {
+    "id": 189,
+    "code": "magnit",
+    "address": "ул. Фрунзе, д. 49/3",
+    "lat": 55.038198,
+    "lng": 82.933817,
+    "source_description": "Файл пользователя: magnit_osm_coords.txt (OSM указан в имени файла; источник и актуальность не проверены)",
+    "status": "review"
+  },
+  {
+    "id": 19,
+    "code": "pyaterochka",
+    "address": "ул. Бориса Богаткова, 221",
+    "lat": 55.036825,
+    "lng": 82.976065,
+    "source_url": "https://yandex.ru/maps/org/pyatyorochka/141764995221/",
+    "source_description": "Яндекс Карты, карточка филиала",
+    "status": "listed",
+    "checked_at": "2026-11-27"
+  },
+  {
+    "id": 190,
+    "code": "magnit",
+    "address": "ул. Центральная, д. 43",
+    "lat": 54.963069,
+    "lng": 83.031908,
+    "source_description": "Файл пользователя: magnit_osm_coords.txt (OSM указан в имени файла; источник и актуальность не проверены)",
+    "status": "review"
+  },
+  {
+    "id": 191,
+    "code": "magnit",
+    "address": "ул. Челюскинцев, д. 14/1",
+    "lat": 55.037913,
+    "lng": 82.902529,
+    "source_description": "Файл пользователя: magnit_osm_coords.txt (OSM указан в имени файла; источник и актуальность не проверены)",
+    "status": "review"
+  },
+  {
+    "id": 192,
+    "code": "magnit",
+    "address": "ул. Шевченко, д. 25",
+    "lat": 55.021471,
+    "lng": 82.938335,
+    "source_description": "Файл пользователя: magnit_osm_coords.txt (OSM указан в имени файла; источник и актуальность не проверены)",
+    "status": "review"
+  },
+  {
+    "id": 193,
+    "code": "magnit",
+    "address": "ул. Южная, д. 40/3",
+    "lat": 54.982491,
+    "lng": 82.849208,
+    "source_description": "Файл пользователя: magnit_osm_coords.txt (OSM указан в имени файла; источник и актуальность не проверены)",
+    "status": "review"
+  },
+  {
+    "id": 2,
+    "code": "pyaterochka",
+    "address": "б-р Молодёжи, д. 15",
+    "lat": 54.864264,
+    "lng": 83.085809,
+    "source_description": "Файл пользователя: pyaterochka_osm_coords.txt (OSM указан в имени файла; источник и актуальность не проверены)",
+    "status": "review"
+  },
+  {
+    "id": 20,
+    "code": "pyaterochka",
+    "address": "ул. Бориса Богаткова, д. 228/1",
+    "lat": 55.03446,
+    "lng": 82.980342,
+    "source_description": "Файл пользователя: pyaterochka_osm_coords.txt (OSM указан в имени файла; источник и актуальность не проверены)",
+    "status": "review"
+  },
+  {
+    "id": 21,
+    "code": "pyaterochka",
+    "address": "ул. Ватутина, д. 14",
+    "lat": 54.988228,
+    "lng": 82.886785,
+    "source_description": "Файл пользователя: pyaterochka_osm_coords.txt (OSM указан в имени файла; источник и актуальность не проверены)",
+    "status": "review"
+  },
+  {
+    "id": 22,
+    "code": "pyaterochka",
+    "address": "ул. Владимира Высоцкого, д. 45",
+    "lat": 55.030393,
+    "lng": 83.019193,
+    "source_description": "Файл пользователя: pyaterochka_osm_coords.txt (OSM указан в имени файла; источник и актуальность не проверены)",
+    "status": "review"
+  },
+  {
+    "id": 23,
+    "code": "pyaterochka",
+    "address": "ул. Владимира Заровного, д. 10",
+    "lat": 54.990464,
+    "lng": 82.970864,
+    "source_description": "Файл пользователя: pyaterochka_osm_coords.txt (OSM указан в имени файла; источник и актуальность не проверены)",
+    "status": "review"
+  },
+  {
+    "id": 24,
+    "code": "pyaterochka",
+    "address": "Военная ул., 1, этаж 1",
+    "lat": 55.030331,
+    "lng": 82.935582,
+    "source_description": "Яндекс Карты, карточка филиала",
+    "source_url": "https://yandex.ru/maps/org/pyatyorochka/33614244554/",
+    "status": "closed",
+    "checked_at": "2026-11-27"
+  },
+  {
+    "id": 26,
+    "code": "pyaterochka",
+    "address": "ул. Восход, 20",
+    "lat": 55.012651,
+    "lng": 82.942257,
+    "source_description": "Яндекс Карты, карточка филиала",
+    "source_url": "https://yandex.ru/maps/org/pyatyorochka/63238273550/",
+    "status": "listed",
+    "checked_at": "2026-11-27"
+  },
+  {
+    "id": 27,
+    "code": "pyaterochka",
+    "address": "ул. Выборная, д. 117",
+    "lat": 55.007327,
+    "lng": 83.025689,
+    "source_description": "Файл пользователя: pyaterochka_osm_coords.txt (OSM указан в имени файла; источник и актуальность не проверены)",
+    "status": "review"
+  },
+  {
+    "id": 28,
+    "code": "pyaterochka",
+    "address": "Выборная ул., 99/11",
+    "lat": 55.006014,
+    "lng": 83.01344,
+    "source_url": "https://yandex.ru/maps/org/pyatyorochka/227310893000/",
+    "source_description": "Яндекс Карты, карточка филиала",
+    "status": "listed",
+    "checked_at": "2026-11-27"
+  },
+  {
+    "id": 29,
+    "code": "pyaterochka",
+    "address": "ул. Галущака, 2А, этаж 1",
+    "lat": 55.051588,
+    "lng": 82.902575,
+    "source_description": "Яндекс Карты, карточка филиала",
+    "source_url": "https://yandex.ru/maps/org/pyatyorochka/171096911981/",
+    "status": "listed",
+    "checked_at": "2026-11-27"
+  },
+  {
+    "id": 292,
+    "code": "magnit",
+    "address": "ул. Ипподромская, д. 12",
+    "lat": 55.025143,
+    "lng": 82.93604,
+    "source_description": "Адрес указан пользователем; координаты карточки Яндекс Карт; положение входа требует проверки",
+    "source_url": "https://yandex.com/maps/org/magnit/16117561384/",
+    "status": "review"
+  },
+  {
+    "id": 3,
+    "code": "pyaterochka",
+    "address": "мкр-н Стрижи, д. 10",
+    "lat": 55.130194,
+    "lng": 82.887018,
+    "source_description": "Файл пользователя: pyaterochka_osm_coords.txt (OSM указан в имени файла; источник и актуальность не проверены)",
+    "status": "review"
+  },
+  {
+    "id": 30,
+    "code": "pyaterochka",
+    "address": "ул. Гаранина, д. 29",
+    "lat": 55.026412,
+    "lng": 82.968982,
+    "source_description": "Файл пользователя: pyaterochka_osm_coords.txt (OSM указан в имени файла; источник и актуальность не проверены)",
+    "status": "review"
+  },
+  {
+    "id": 31,
+    "code": "pyaterochka",
+    "address": "ул. Героев Революции, д. 27",
+    "lat": 54.975419,
+    "lng": 83.085759,
+    "source_description": "Файл пользователя: pyaterochka_osm_coords.txt (OSM указан в имени файла; источник и актуальность не проверены)",
+    "status": "review"
+  },
+  {
+    "id": 32,
+    "code": "pyaterochka",
+    "address": "ул. Гоголя, д. 42",
+    "lat": 55.043742,
+    "lng": 82.939477,
+    "source_description": "Файл пользователя: pyaterochka_osm_coords.txt (OSM указан в имени файла; источник и актуальность не проверены)",
+    "status": "review"
+  },
+  {
+    "id": 33,
+    "code": "pyaterochka",
+    "address": "ул. Громова, д. 14",
+    "lat": 54.936855,
+    "lng": 82.90787,
+    "source_description": "Файл пользователя: pyaterochka_osm_coords.txt (OSM указан в имени файла; источник и актуальность не проверены)",
+    "status": "review"
+  },
+  {
+    "id": 34,
+    "code": "pyaterochka",
+    "address": "ул. Громова, д. 21/1",
+    "lat": 54.932408,
+    "lng": 82.908968,
+    "source_description": "Файл пользователя: pyaterochka_osm_coords.txt (OSM указан в имени файла; источник и актуальность не проверены)",
+    "status": "review"
+  },
+  {
+    "id": 35,
+    "code": "pyaterochka",
+    "address": "ул. Декабристов, д. 10",
+    "lat": 55.013369,
+    "lng": 82.937599,
+    "source_description": "Файл пользователя: pyaterochka_osm_coords.txt (OSM указан в имени файла; источник и актуальность не проверены)",
+    "status": "review"
+  },
+  {
+    "id": 36,
+    "code": "pyaterochka",
+    "address": "ул. Демакова, д. 20",
+    "lat": 54.863264,
+    "lng": 83.109197,
+    "source_description": "Файл пользователя: pyaterochka_osm_coords.txt (OSM указан в имени файла; источник и актуальность не проверены)",
+    "status": "review"
+  },
+  {
+    "id": 37,
+    "code": "pyaterochka",
+    "address": "ул. Державина, 47",
+    "lat": 55.039979,
+    "lng": 82.93134,
+    "source_url": "https://yandex.ru/maps/org/pyatyorochka/90775794035/",
+    "source_description": "Яндекс Карты, карточка филиала",
+    "status": "listed",
+    "checked_at": "2026-11-27"
+  },
+  {
+    "id": 38,
+    "code": "pyaterochka",
+    "address": "ул. Дуси Ковальчук, д. 185",
+    "lat": 55.063085,
+    "lng": 82.920684,
+    "source_description": "Файл пользователя: pyaterochka_osm_coords.txt (OSM указан в имени файла; источник и актуальность не проверены)",
+    "status": "review"
+  },
+  {
+    "id": 39,
+    "code": "pyaterochka",
+    "address": "ул. Дуси Ковальчук, 248",
+    "lat": 55.055211,
+    "lng": 82.902725,
+    "source_description": "Яндекс Карты, карточка филиала",
+    "source_url": "https://yandex.ru/maps/org/pyatyorochka/95936635112/",
+    "status": "listed",
+    "checked_at": "2026-11-27"
+  },
+  {
+    "id": 4,
+    "code": "pyaterochka",
+    "address": "пл. Карла Маркса, д. 1",
+    "lat": 54.981509,
+    "lng": 82.8944,
+    "source_description": "Файл пользователя: pyaterochka_osm_coords.txt (OSM указан в имени файла; источник и актуальность не проверены)",
+    "status": "review"
+  },
+  {
+    "id": 40,
+    "code": "pyaterochka",
+    "address": "ул. Дуси Ковальчук, д. 258/2",
+    "lat": 55.057218,
+    "lng": 82.908523,
+    "source_description": "Файл пользователя: pyaterochka_osm_coords.txt (OSM указан в имени файла; источник и актуальность не проверены)",
+    "status": "review"
+  },
+  {
+    "id": 41,
+    "code": "pyaterochka",
+    "address": "ул. Жуковского, д. 113",
+    "lat": 55.060633,
+    "lng": 82.892269,
+    "source_description": "Файл пользователя: pyaterochka_osm_coords.txt (OSM указан в имени файла; источник и актуальность не проверены)",
+    "status": "review"
+  },
+  {
+    "id": 42,
+    "code": "pyaterochka",
+    "address": "ул. Залесского, д. 4",
+    "lat": 55.069019,
+    "lng": 82.925306,
+    "source_description": "Файл пользователя: pyaterochka_osm_coords.txt (OSM указан в имени файла; источник и актуальность не проверены)",
+    "status": "review"
+  },
+  {
+    "id": 43,
+    "code": "pyaterochka",
+    "address": "ул. Знаменская, д. 24",
+    "lat": 55.161389,
+    "lng": 82.983884,
+    "source_description": "Файл пользователя: pyaterochka_osm_coords.txt (OSM указан в имени файла; источник и актуальность не проверены)",
+    "status": "review"
+  },
+  {
+    "id": 44,
+    "code": "pyaterochka",
+    "address": "ул. Зорге, д. 133",
+    "lat": 54.934811,
+    "lng": 82.925342,
+    "source_description": "Файл пользователя: pyaterochka_osm_coords.txt (OSM указан в имени файла; источник и актуальность не проверены)",
+    "status": "review"
+  },
+  {
+    "id": 45,
+    "code": "pyaterochka",
+    "address": "ул. Зорге, д. 191",
+    "lat": 54.934976,
+    "lng": 82.91588,
+    "source_description": "Файл пользователя: pyaterochka_osm_coords.txt (OSM указан в имени файла; источник и актуальность не проверены)",
+    "status": "review"
+  },
+  {
+    "id": 46,
+    "code": "pyaterochka",
+    "address": "ул. Зорге, д. 1а",
+    "lat": 54.938123,
+    "lng": 82.899245,
+    "source_description": "Файл пользователя: pyaterochka_osm_coords.txt (OSM указан в имени файла; источник и актуальность не проверены)",
+    "status": "review"
+  },
+  {
+    "id": 47,
+    "code": "pyaterochka",
+    "address": "ул. Иванова, д. 30А",
+    "lat": 54.867954,
+    "lng": 83.09371,
+    "source_description": "Файл пользователя: pyaterochka_osm_coords.txt (OSM указан в имени файла; источник и актуальность не проверены)",
+    "status": "review"
+  },
+  {
+    "id": 48,
+    "code": "pyaterochka",
+    "address": "ул. Кирова, д. 112",
+    "lat": 55.011256,
+    "lng": 82.955559,
+    "source_description": "Файл пользователя: pyaterochka_osm_coords.txt (OSM указан в имени файла; источник и актуальность не проверены)",
+    "status": "review"
+  },
+  {
+    "id": 49,
+    "code": "pyaterochka",
+    "address": "ул. Кирова, д. 317",
+    "lat": 55.004252,
+    "lng": 82.974862,
+    "source_description": "Файл пользователя: pyaterochka_osm_coords.txt (OSM указан в имени файла; источник и актуальность не проверены)",
+    "status": "review"
+  },
+  {
+    "id": 5,
+    "code": "pyaterochka",
+    "address": "просп. Дзержинского, 1/4",
+    "lat": 55.049094,
+    "lng": 82.960028,
+    "source_url": "https://yandex.ru/maps/org/pyatyorochka/184149244265/",
+    "source_description": "Яндекс Карты, карточка филиала",
+    "status": "listed",
+    "checked_at": "2026-11-27"
+  },
+  {
+    "id": 50,
+    "code": "pyaterochka",
+    "address": "ул. Комсомольская, д. 15",
+    "lat": 54.956589,
+    "lng": 82.962964,
+    "source_description": "Файл пользователя: pyaterochka_osm_coords.txt (OSM указан в имени файла; источник и актуальность не проверены)",
+    "status": "review"
+  },
+  {
+    "id": 51,
+    "code": "pyaterochka",
+    "address": "ул. Комсомольская, д. 2а",
+    "lat": 54.955424,
+    "lng": 82.970115,
+    "source_description": "Файл пользователя: pyaterochka_osm_coords.txt (OSM указан в имени файла; источник и актуальность не проверены)",
+    "status": "review"
+  },
+  {
+    "id": 52,
+    "code": "pyaterochka",
+    "address": "ул. Кошурникова, д. 13",
+    "lat": 55.042374,
+    "lng": 82.960802,
+    "source_description": "Файл пользователя: pyaterochka_osm_coords.txt (OSM указан в имени файла; источник и актуальность не проверены)",
+    "status": "review"
+  },
+  {
+    "id": 53,
+    "code": "pyaterochka",
+    "address": "ул. Курганская, д. 38/2",
+    "lat": 54.970456,
+    "lng": 82.841957,
+    "source_description": "Файл пользователя: pyaterochka_osm_coords.txt (OSM указан в имени файла; источник и актуальность не проверены)",
+    "status": "review"
+  },
+  {
+    "id": 54,
+    "code": "pyaterochka",
+    "address": "ул. Лазурная, д. 24",
+    "lat": 55.033598,
+    "lng": 83.018507,
+    "source_description": "Файл пользователя: pyaterochka_osm_coords.txt (OSM указан в имени файла; источник и актуальность не проверены)",
+    "status": "review"
+  },
+  {
+    "id": 55,
+    "code": "pyaterochka",
+    "address": "Линейная ул., 120",
+    "lat": 55.052134,
+    "lng": 82.926406,
+    "source_description": "Яндекс Карты, карточка филиала",
+    "source_url": "https://yandex.ru/maps/org/pyatyorochka/34257734502/",
+    "status": "listed",
+    "checked_at": "2026-11-27"
+  },
+  {
+    "id": 56,
+    "code": "pyaterochka",
+    "address": "ул. Льва Толстого, д. 34",
+    "lat": 55.021772,
+    "lng": 82.939575,
+    "source_description": "Файл пользователя: pyaterochka_osm_coords.txt (OSM указан в имени файла; источник и актуальность не проверены)",
+    "status": "review"
+  },
+  {
+    "id": 57,
+    "code": "pyaterochka",
+    "address": "ул. Магистральная, д. 47",
+    "lat": 55.170736,
+    "lng": 82.969932,
+    "source_description": "Файл пользователя: pyaterochka_osm_coords.txt (OSM указан в имени файла; источник и актуальность не проверены)",
+    "status": "review"
+  },
+  {
+    "id": 58,
+    "code": "pyaterochka",
+    "address": "ул. Максима Горького, 85",
+    "lat": 55.028087,
+    "lng": 82.928198,
+    "source_url": "https://yandex.ru/maps/org/pyatyorochka/18163104864/",
+    "source_description": "Яндекс Карты, карточка филиала",
+    "status": "listed",
+    "checked_at": "2026-11-27"
+  },
+  {
+    "id": 59,
+    "code": "pyaterochka",
+    "address": "ул. Марата, 2",
+    "lat": 54.977884,
+    "lng": 83.098566,
+    "source_description": "Яндекс Карты, карточка филиала",
+    "source_url": "https://yandex.ru/maps/org/pyatyorochka/129458415798/",
+    "status": "listed",
+    "checked_at": "2026-11-27"
+  },
+  {
+    "id": 6,
+    "code": "pyaterochka",
+    "address": "пр-т Дзержинского, д. 73",
+    "lat": 55.061055,
+    "lng": 82.985387,
+    "source_description": "Файл пользователя: pyaterochka_osm_coords.txt (OSM указан в имени файла; источник и актуальность не проверены)",
+    "status": "review"
+  },
+  {
+    "id": 60,
+    "code": "pyaterochka",
+    "address": "ул. Мира, д. 25",
+    "lat": 54.964346,
+    "lng": 82.910533,
+    "source_description": "Файл пользователя: pyaterochka_osm_coords.txt (OSM указан в имени файла; источник и актуальность не проверены)",
+    "status": "review"
+  },
+  {
+    "id": 61,
+    "code": "pyaterochka",
+    "address": "ул. Мичурина, 9",
+    "lat": 55.03434,
+    "lng": 82.922875,
+    "source_url": "https://yandex.ru/maps/org/pyatyorochka/160410527655/",
+    "source_description": "Яндекс Карты, карточка филиала",
+    "status": "listed",
+    "checked_at": "2026-11-27"
+  },
+  {
+    "id": 62,
+    "code": "pyaterochka",
+    "address": "ул. Некрасова, 42",
+    "lat": 55.045457,
+    "lng": 82.92569,
+    "source_description": "Яндекс Карты, карточка филиала",
+    "source_url": "https://yandex.ru/maps/org/pyatyorochka/28169069778/",
+    "status": "closed",
+    "checked_at": "2026-11-27"
+  },
+  {
+    "id": 63,
+    "code": "pyaterochka",
+    "address": "ул. Немировича-Данченко, д. 142",
+    "lat": 54.988319,
+    "lng": 82.914712,
+    "source_description": "Файл пользователя: pyaterochka_osm_coords.txt (OSM указан в имени файла; источник и актуальность не проверены)",
+    "status": "review"
+  },
+  {
+    "id": 64,
+    "code": "pyaterochka",
+    "address": "ул. Немировича-Данченко, д. 147/3",
+    "lat": 54.98121,
+    "lng": 82.912337,
+    "source_description": "Файл пользователя: pyaterochka_osm_coords.txt (OSM указан в имени файла; источник и актуальность не проверены)",
+    "status": "review"
+  },
+  {
+    "id": 65,
+    "code": "pyaterochka",
+    "address": "ул. Немировича-Данченко, д. 15",
+    "lat": 54.971179,
+    "lng": 82.864845,
+    "source_description": "Файл пользователя: pyaterochka_osm_coords.txt (OSM указан в имени файла; источник и актуальность не проверены)",
+    "status": "review"
+  },
+  {
+    "id": 66,
+    "code": "pyaterochka",
+    "address": "Новосибирская ул., 28",
+    "lat": 54.987018,
+    "lng": 82.843315,
+    "source_description": "Яндекс Карты, карточка филиала",
+    "source_url": "https://yandex.ru/maps/org/pyatyorochka/10003446209/",
+    "status": "listed",
+    "checked_at": "2026-11-27"
+  },
+  {
+    "id": 67,
+    "code": "pyaterochka",
+    "address": "ул. Олеко Дундича, 25, этаж 1",
+    "lat": 55.076215,
+    "lng": 82.971396,
+    "source_description": "Яндекс Карты, карточка филиала",
+    "source_url": "https://yandex.ru/maps/org/pyatyorochka/24146087908/",
+    "status": "listed",
+    "checked_at": "2026-11-27"
+  },
+  {
+    "id": 68,
+    "code": "pyaterochka",
+    "address": "ул. Оловозаводская, д. 18/4",
+    "lat": 54.963729,
+    "lng": 82.951961,
+    "source_description": "Файл пользователя: pyaterochka_osm_coords.txt (OSM указан в имени файла; источник и актуальность не проверены)",
+    "status": "review"
+  },
+  {
+    "id": 69,
+    "code": "pyaterochka",
+    "address": "ул. Первомайская, д. 170",
+    "lat": 54.972731,
+    "lng": 83.081175,
+    "source_description": "Файл пользователя: pyaterochka_osm_coords.txt (OSM указан в имени файла; источник и актуальность не проверены)",
+    "status": "review"
+  },
+  {
+    "id": 7,
+    "code": "pyaterochka",
+    "address": "пр-т Карла Маркса, д. 30",
+    "lat": 54.991915,
+    "lng": 82.91185,
+    "source_description": "Файл пользователя: pyaterochka_osm_coords.txt (OSM указан в имени файла; источник и актуальность не проверены)",
+    "status": "review"
+  },
+  {
+    "id": 70,
+    "code": "pyaterochka",
+    "address": "ул. Первомайская, д. 196",
+    "lat": 54.974372,
+    "lng": 83.070009,
+    "source_description": "Файл пользователя: pyaterochka_osm_coords.txt (OSM указан в имени файла; источник и актуальность не проверены)",
+    "status": "review"
+  },
+  {
+    "id": 71,
+    "code": "pyaterochka",
+    "address": "ул. Первомайская, д. 236/2",
+    "lat": 54.977484,
+    "lng": 83.048,
+    "source_description": "Файл пользователя: pyaterochka_osm_coords.txt (OSM указан в имени файла; источник и актуальность не проверены)",
+    "status": "review"
+  },
+  {
+    "id": 72,
+    "code": "pyaterochka",
+    "address": "ул. Первомайская, д. 45",
+    "lat": 54.97203,
+    "lng": 83.080206,
+    "source_description": "Файл пользователя: pyaterochka_osm_coords.txt (OSM указан в имени файла; источник и актуальность не проверены)",
+    "status": "review"
+  },
+  {
+    "id": 73,
+    "code": "pyaterochka",
+    "address": "ул. Переездная, д. 66",
+    "lat": 55.054282,
+    "lng": 82.889628,
+    "source_description": "Файл пользователя: pyaterochka_osm_coords.txt (OSM указан в имени файла; источник и актуальность не проверены)",
+    "status": "review"
+  },
+  {
+    "id": 74,
+    "code": "pyaterochka",
+    "address": "ул. Петухова, д. 152/1",
+    "lat": 54.938292,
+    "lng": 82.933072,
+    "source_description": "Файл пользователя: pyaterochka_osm_coords.txt (OSM указан в имени файла; источник и актуальность не проверены)",
+    "status": "review"
+  },
+  {
+    "id": 75,
+    "code": "pyaterochka",
+    "address": "ул. Печатников, д. 24",
+    "lat": 54.864306,
+    "lng": 82.976914,
+    "source_description": "Файл пользователя: pyaterochka_osm_coords.txt (OSM указан в имени файла; источник и актуальность не проверены)",
+    "status": "review"
+  },
+  {
+    "id": 76,
+    "code": "pyaterochka",
+    "address": "ул. Приморская, д. 5/1",
+    "lat": 54.857,
+    "lng": 82.98023,
+    "source_description": "Файл пользователя: pyaterochka_osm_coords.txt (OSM указан в имени файла; источник и актуальность не проверены)",
+    "status": "review"
+  },
+  {
+    "id": 77,
+    "code": "pyaterochka",
+    "address": "ул. Сакко и Ванцетти, д. 5",
+    "lat": 55.011078,
+    "lng": 82.93475,
+    "source_description": "Файл пользователя: pyaterochka_osm_coords.txt (OSM указан в имени файла; источник и актуальность не проверены)",
+    "status": "review"
+  },
+  {
+    "id": 78,
+    "code": "pyaterochka",
+    "address": "ул. Серафимовича, д. 14",
+    "lat": 54.979197,
+    "lng": 82.880398,
+    "source_description": "Файл пользователя: pyaterochka_osm_coords.txt (OSM указан в имени файла; источник и актуальность не проверены)",
+    "status": "review"
+  },
+  {
+    "id": 79,
+    "code": "pyaterochka",
+    "address": "ул. Сибиряков-Гвардейцев, д. 17/1",
+    "lat": 54.976176,
+    "lng": 82.898124,
+    "source_description": "Файл пользователя: pyaterochka_osm_coords.txt (OSM указан в имени файла; источник и актуальность не проверены)",
+    "status": "review"
+  },
+  {
+    "id": 8,
+    "code": "pyaterochka",
+    "address": "ул. 2-я Обская, д. 19",
+    "lat": 54.997534,
+    "lng": 82.957397,
+    "source_description": "Файл пользователя: pyaterochka_osm_coords.txt (OSM указан в имени файла; источник и актуальность не проверены)",
+    "status": "review"
+  },
+  {
+    "id": 80,
+    "code": "pyaterochka",
+    "address": "ул. Сибиряков-Гвардейцев, д. 80А",
+    "lat": 54.934763,
+    "lng": 82.89462,
+    "source_description": "Файл пользователя: pyaterochka_osm_coords.txt (OSM указан в имени файла; источник и актуальность не проверены)",
+    "status": "review"
+  },
+  {
+    "id": 81,
+    "code": "pyaterochka",
+    "address": "ул. Станиславского, д. 28/1",
+    "lat": 54.975071,
+    "lng": 82.872319,
+    "source_description": "Файл пользователя: pyaterochka_osm_coords.txt (OSM указан в имени файла; источник и актуальность не проверены)",
+    "status": "review"
+  },
+  {
+    "id": 82,
+    "code": "pyaterochka",
+    "address": "ул. Танковая, д. 72",
+    "lat": 55.064565,
+    "lng": 82.935606,
+    "source_description": "Файл пользователя: pyaterochka_osm_coords.txt (OSM указан в имени файла; источник и актуальность не проверены)",
+    "status": "review"
+  },
+  {
+    "id": 83,
+    "code": "pyaterochka",
+    "address": "ул. Титова, д. 236",
+    "lat": 54.9797,
+    "lng": 82.810937,
+    "source_description": "Файл пользователя: pyaterochka_osm_coords.txt (OSM указан в имени файла; источник и актуальность не проверены)",
+    "status": "review"
+  },
+  {
+    "id": 84,
+    "code": "pyaterochka",
+    "address": "ул. Трикотажная, д. 55",
+    "lat": 55.068525,
+    "lng": 82.962297,
+    "source_description": "Файл пользователя: pyaterochka_osm_coords.txt (OSM указан в имени файла; источник и актуальность не проверены)",
+    "status": "review"
+  },
+  {
+    "id": 85,
+    "code": "pyaterochka",
+    "address": "Троллейная ул., 14",
+    "lat": 54.987997,
+    "lng": 82.85726,
+    "source_description": "Яндекс Карты, карточка филиала",
+    "source_url": "https://yandex.ru/maps/org/pyatyorochka/180616181507/",
+    "status": "listed",
+    "checked_at": "2026-11-27"
+  },
+  {
+    "id": 86,
+    "code": "pyaterochka",
+    "address": "Троллейная ул., 37",
+    "lat": 54.979677,
+    "lng": 82.859944,
+    "source_url": "https://yandex.ru/maps/org/pyatyorochka/125706045798/",
+    "source_description": "Яндекс Карты, карточка филиала",
+    "status": "listed",
+    "checked_at": "2026-11-27"
+  },
+  {
+    "id": 87,
+    "code": "pyaterochka",
+    "address": "ул. Урманова, д. 1",
+    "lat": 54.967986,
+    "lng": 82.957479,
+    "source_description": "Файл пользователя: pyaterochka_osm_coords.txt (OSM указан в имени файла; источник и актуальность не проверены)",
+    "status": "review"
+  },
+  {
+    "id": 88,
+    "code": "pyaterochka",
+    "address": "ул. Учительская, д. 18",
+    "lat": 55.077173,
+    "lng": 82.9717,
+    "source_description": "Файл пользователя: pyaterochka_osm_coords.txt (OSM указан в имени файла; источник и актуальность не проверены)",
+    "status": "review"
+  },
+  {
+    "id": 89,
+    "code": "pyaterochka",
+    "address": "Учительская ул., 29",
+    "lat": 55.079416,
+    "lng": 82.967518,
+    "source_description": "Яндекс Карты, карточка филиала",
+    "source_url": "https://yandex.ru/maps/org/pyatyorochka/126705597892/",
+    "status": "listed",
+    "checked_at": "2026-11-27"
+  },
+  {
+    "id": 9,
+    "code": "pyaterochka",
+    "address": "ул. 25 лет Октября, д. 14",
+    "lat": 55.073805,
+    "lng": 82.964218,
+    "source_description": "Файл пользователя: pyaterochka_osm_coords.txt (OSM указан в имени файла; источник и актуальность не проверены)",
+    "status": "review"
+  },
+  {
+    "id": 90,
+    "code": "pyaterochka",
+    "address": "ул. Фрунзе, 5",
+    "lat": 55.036634,
+    "lng": 82.917029,
+    "source_url": "https://yandex.ru/maps/org/pyatyorochka/190822190639/",
+    "source_description": "Яндекс Карты, карточка филиала",
+    "status": "listed",
+    "checked_at": "2026-11-27"
+  },
+  {
+    "id": 91,
+    "code": "pyaterochka",
+    "address": "ул. Фрунзе, 88",
+    "lat": 55.03763,
+    "lng": 82.934652,
+    "source_description": "Яндекс Карты, карточка филиала",
+    "source_url": "https://yandex.ru/maps/org/pyatyorochka/222054220825/",
+    "status": "listed",
+    "checked_at": "2026-11-27"
+  },
+  {
+    "id": 92,
+    "code": "pyaterochka",
+    "address": "ул. Часовая, д. 6, к. 5",
+    "lat": 54.86605,
+    "lng": 82.981606,
+    "source_description": "Файл пользователя: pyaterochka_osm_coords.txt (OSM указан в имени файла; источник и актуальность не проверены)",
+    "status": "review"
+  },
+  {
+    "id": 93,
+    "code": "pyaterochka",
+    "address": "ул. Челюскинцев, 9",
+    "lat": 55.037813,
+    "lng": 82.899878,
+    "source_description": "Яндекс Карты, карточка филиала",
+    "source_url": "https://yandex.ru/maps/org/pyatyorochka/115898703089/",
+    "status": "listed",
+    "checked_at": "2026-11-27"
+  },
+  {
+    "id": 94,
+    "code": "pyaterochka",
+    "address": "ул. Широкая, д. 37а",
+    "lat": 54.994298,
+    "lng": 82.854903,
+    "source_description": "Файл пользователя: pyaterochka_osm_coords.txt (OSM указан в имени файла; источник и актуальность не проверены)",
+    "status": "review"
+  },
+  {
+    "id": 95,
+    "code": "pyaterochka",
+    "address": "ул. Экваторная, д. 15А",
+    "lat": 54.886865,
+    "lng": 83.102514,
+    "source_description": "Файл пользователя: pyaterochka_osm_coords.txt (OSM указан в имени файла; источник и актуальность не проверены)",
+    "status": "review"
+  },
+  {
+    "id": 96,
+    "code": "magnit",
+    "address": "6-й Порт-Артурский пер., д. 76",
+    "lat": 54.984166,
+    "lng": 82.796387,
+    "source_description": "Файл пользователя: magnit_osm_coords.txt (OSM указан в имени файла; источник и актуальность не проверены)",
+    "status": "review"
+  },
+  {
+    "id": 97,
+    "code": "magnit",
+    "address": "Вокзальная магистраль, 1",
+    "lat": 55.035173,
+    "lng": 82.90114,
+    "source_url": "https://yandex.ru/maps/org/magnit/145525250729/",
+    "source_description": "Яндекс Карты, карточка филиала",
+    "status": "listed",
+    "checked_at": "2026-11-27"
+  },
+  {
+    "id": 98,
+    "code": "magnit",
+    "address": "Гусинобродское ш., д. 106",
+    "lat": 55.048109,
+    "lng": 83.072398,
+    "source_description": "Файл пользователя: magnit_osm_coords.txt (OSM указан в имени файла; источник и актуальность не проверены)",
+    "status": "review"
+  },
+  {
+    "id": 99,
+    "code": "magnit",
+    "address": "Красный просп., 153",
+    "lat": 55.05724,
+    "lng": 82.912429,
+    "source_description": "Яндекс Карты, карточка филиала",
+    "source_url": "https://yandex.ru/maps/org/magnit/65149973403/",
+    "status": "listed",
+    "checked_at": "2026-11-27"
+  },
+  {
+    "id": "yandex-1019713283",
+    "code": "maria-ra",
+    "address": "Новочеркасская ул., 2, микрорайон Северный",
+    "lat": 55.092208,
+    "lng": 82.937774,
+    "source_url": "https://yandex.ru/maps/org/mariya_ra/1019713283/",
+    "source_description": "Яндекс Карты, карточка филиала",
+    "status": "listed",
+    "checked_at": "2026-11-27"
+  },
+  {
+    "id": "yandex-105587631851",
+    "code": "magnit",
+    "address": "ул. Кошурникова, 25А",
+    "lat": 55.041644,
+    "lng": 82.972097,
+    "source_url": "https://yandex.ru/maps/org/magnit/105587631851/",
+    "source_description": "Яндекс Карты, карточка филиала",
+    "status": "listed",
+    "checked_at": "2026-11-27"
+  },
+  {
+    "id": "yandex-1068719161",
+    "code": "maria-ra",
+    "address": "ул. Челюскинцев, 18/2",
+    "lat": 55.039318,
+    "lng": 82.905981,
+    "source_url": "https://yandex.ru/maps/org/mariya_ra/1068719161/",
+    "source_description": "Яндекс Карты, карточка филиала",
+    "status": "listed",
+    "checked_at": "2026-11-27"
+  },
+  {
+    "id": "yandex-110082571249",
+    "code": "fix-price",
+    "address": "ул. Красных Зорь, 1/3",
+    "lat": 55.109752,
+    "lng": 82.966093,
+    "source_url": "https://yandex.ru/maps/org/fix_price/110082571249/",
+    "source_description": "Яндекс Карты, карточка филиала",
+    "status": "listed",
+    "checked_at": "2026-11-27"
+  },
+  {
+    "id": "yandex-112159217598",
+    "code": "maria-ra",
+    "address": "Волховская ул., 28",
+    "lat": 54.969662,
+    "lng": 82.842407,
+    "source_url": "https://yandex.ru/maps/org/mariya_ra/112159217598/",
+    "source_description": "Яндекс Карты, карточка филиала",
+    "status": "listed",
+    "checked_at": "2026-11-27"
+  },
+  {
+    "id": "yandex-113185698606",
+    "code": "fix-price",
+    "address": "Ленинградская ул., 71/1",
+    "lat": 55.016426,
+    "lng": 82.951427,
+    "source_url": "https://yandex.ru/maps/org/fix_price/113185698606/",
+    "source_description": "Яндекс Карты, карточка филиала",
+    "status": "listed",
+    "checked_at": "2026-11-27"
+  },
+  {
+    "id": "yandex-1143405105",
+    "code": "maria-ra",
+    "address": "ул. Есенина, 41/1",
+    "lat": 55.042306,
+    "lng": 82.989043,
+    "source_url": "https://yandex.ru/maps/org/mariya_ra/1143405105/",
+    "source_description": "Яндекс Карты, карточка филиала",
+    "status": "listed",
+    "checked_at": "2026-11-27"
+  },
+  {
+    "id": "yandex-114361313175",
+    "code": "magnit",
+    "address": "Добровольческая ул., 6, микрорайон Шлюз, Советский район",
+    "lat": 54.850099,
+    "lng": 83.044582,
+    "source_url": "https://yandex.ru/maps/org/magnit/114361313175/",
+    "source_description": "Яндекс Карты, карточка филиала",
+    "status": "listed",
+    "checked_at": "2026-11-27"
+  },
+  {
+    "id": "yandex-114405584612",
+    "code": "fix-price",
+    "address": "ул. Героев Труда, 18, микрорайон Академгородок, Советский район",
+    "lat": 54.865839,
+    "lng": 83.081014,
+    "source_url": "https://yandex.ru/maps/org/fix_price/114405584612/",
+    "source_description": "Яндекс Карты, карточка филиала",
+    "status": "listed",
+    "checked_at": "2026-11-27"
+  },
+  {
+    "id": "yandex-118062210907",
+    "code": "fix-price",
+    "address": "Тайгинская ул., 19",
+    "lat": 55.109736,
+    "lng": 82.985582,
+    "source_url": "https://yandex.ru/maps/org/fix_price/118062210907/",
+    "source_description": "Яндекс Карты, карточка филиала",
+    "status": "listed",
+    "checked_at": "2026-11-27"
+  },
+  {
+    "id": "yandex-121145424924",
+    "code": "pyaterochka",
+    "address": "Вокзальная магистраль, 4А",
+    "lat": 55.033983,
+    "lng": 82.902614,
+    "source_url": "https://yandex.ru/maps/org/pyatyorochka/121145424924/",
+    "source_description": "Яндекс Карты, карточка филиала",
+    "status": "listed",
+    "checked_at": "2026-11-27"
+  },
+  {
+    "id": "yandex-122164159842",
+    "code": "pyaterochka",
+    "address": "ул. Гребенщикова, 8, микрорайон Родники, Калининский район",
+    "lat": 55.10994,
+    "lng": 82.940684,
+    "source_url": "https://yandex.ru/maps/org/pyatyorochka/122164159842/",
+    "source_description": "Яндекс Карты, карточка филиала",
+    "status": "listed",
+    "checked_at": "2026-11-27"
+  },
+  {
+    "id": "yandex-1253833895",
+    "code": "maria-ra",
+    "address": "ул. Тюленина, 14/1",
+    "lat": 55.109489,
+    "lng": 82.944748,
+    "source_url": "https://yandex.ru/maps/org/mariya_ra/1253833895/",
+    "source_description": "Яндекс Карты, карточка филиала",
+    "status": "listed",
+    "checked_at": "2026-11-27"
+  },
+  {
+    "id": "yandex-12573846845",
+    "code": "pyaterochka",
+    "address": "Бетонный переезд, 2",
+    "lat": 54.994761,
+    "lng": 82.832245,
+    "source_url": "https://yandex.ru/maps/org/pyatyorochka/12573846845/",
+    "source_description": "Яндекс Карты, карточка филиала",
+    "status": "listed",
+    "checked_at": "2026-11-27"
+  },
+  {
+    "id": "yandex-127216229738",
+    "code": "pyaterochka",
+    "address": "ул. Бестужева, 2А",
+    "lat": 55.08362,
+    "lng": 82.893457,
+    "source_url": "https://yandex.ru/maps/org/pyatyorochka/127216229738/",
+    "source_description": "Яндекс Карты, карточка филиала",
+    "status": "listed",
+    "checked_at": "2026-11-27"
+  },
+  {
+    "id": "yandex-127318216080",
+    "code": "pyaterochka",
+    "address": "Центральная аллея, 28, посёлок Озёрный",
+    "lat": 55.146522,
+    "lng": 82.900048,
+    "source_url": "https://yandex.ru/maps/org/pyatyorochka/127318216080/",
+    "source_description": "Яндекс Карты, результат поиска; актуальность и вход требуют проверки",
+    "status": "review"
+  },
+  {
+    "id": "yandex-133792589315",
+    "code": "fix-price",
+    "address": "ул. Земнухова, 15, микрорайон Родники, Калининский район",
+    "lat": 55.111917,
+    "lng": 82.955972,
+    "source_url": "https://yandex.ru/maps/org/fix_price/133792589315/",
+    "source_description": "Яндекс Карты, карточка филиала",
+    "status": "listed",
+    "checked_at": "2026-11-27"
+  },
+  {
+    "id": "yandex-138698120405",
+    "code": "maria-ra",
+    "address": "Плющихинская ул., 6к5",
+    "lat": 55.014044,
+    "lng": 83.001645,
+    "source_url": "https://yandex.ru/maps/org/mariya_ra/138698120405/",
+    "source_description": "Яндекс Карты, карточка филиала",
+    "status": "listed",
+    "checked_at": "2026-11-27"
+  },
+  {
+    "id": "yandex-139934727151",
+    "code": "maria-ra",
+    "address": "ул. Королёва, 14/1",
+    "lat": 55.048666,
+    "lng": 82.969587,
+    "source_url": "https://yandex.ru/maps/org/mariya_ra/139934727151/",
+    "source_description": "Яндекс Карты, карточка филиала",
+    "status": "listed",
+    "checked_at": "2026-11-27"
+  },
+  {
+    "id": "yandex-146780909391",
+    "code": "fix-price",
+    "address": "ул. Челюскинцев, 14/2",
+    "lat": 55.038358,
+    "lng": 82.903439,
+    "source_url": "https://yandex.ru/maps/org/fix_price/146780909391/",
+    "source_description": "Яндекс Карты, карточка филиала",
+    "status": "listed",
+    "checked_at": "2026-11-27"
+  },
+  {
+    "id": "yandex-147026124297",
+    "code": "maria-ra",
+    "address": "Выборная ул., 144/2",
+    "lat": 55.00359,
+    "lng": 83.025641,
+    "source_url": "https://yandex.ru/maps/org/mariya_ra/147026124297/",
+    "source_description": "Яндекс Карты, карточка филиала",
+    "status": "listed",
+    "checked_at": "2026-11-27"
+  },
+  {
+    "id": "yandex-147345598260",
+    "code": "fix-price",
+    "address": "ул. Ленина, 32",
+    "lat": 55.031285,
+    "lng": 82.904397,
+    "source_url": "https://yandex.ru/maps/org/fix_price/147345598260/",
+    "source_description": "Яндекс Карты, карточка филиала",
+    "status": "listed",
+    "checked_at": "2026-11-27"
+  },
+  {
+    "id": "yandex-149823439626",
+    "code": "maria-ra",
+    "address": "Выборная ул., 125/1",
+    "lat": 55.002918,
+    "lng": 83.019315,
+    "source_url": "https://yandex.ru/maps/org/mariya_ra/149823439626/",
+    "source_description": "Яндекс Карты, карточка филиала",
+    "status": "listed",
+    "checked_at": "2026-11-27"
+  },
+  {
+    "id": "yandex-151516494786",
+    "code": "pyaterochka",
+    "address": "Большая ул., 594",
+    "lat": 55.02536,
+    "lng": 82.813189,
+    "source_url": "https://yandex.ru/maps/org/pyatyorochka/151516494786/",
+    "source_description": "Яндекс Карты, карточка филиала",
+    "status": "listed",
+    "checked_at": "2026-11-27"
+  },
+  {
+    "id": "yandex-152243826983",
+    "code": "maria-ra",
+    "address": "просп. Строителей, 19/1, микрорайон Академгородок, Советский район",
+    "lat": 54.860526,
+    "lng": 83.084962,
+    "source_url": "https://yandex.ru/maps/org/mariya_ra/152243826983/",
+    "source_description": "Яндекс Карты, карточка филиала",
+    "status": "listed",
+    "checked_at": "2026-11-27"
+  },
+  {
+    "id": "yandex-153895615018",
+    "code": "fix-price",
+    "address": "ул. Юности, 1/1",
+    "lat": 55.02735,
+    "lng": 82.807427,
+    "source_url": "https://yandex.ru/maps/org/fix_price/153895615018/",
+    "source_description": "Яндекс Карты, карточка филиала",
+    "status": "listed",
+    "checked_at": "2026-11-27"
+  },
+  {
+    "id": "yandex-156120406555",
+    "code": "pyaterochka",
+    "address": "2-й Экскаваторный пер., 29Б",
+    "lat": 55.025339,
+    "lng": 82.802756,
+    "source_url": "https://yandex.ru/maps/org/pyatyorochka/156120406555/",
+    "source_description": "Яндекс Карты, карточка филиала",
+    "status": "listed",
+    "checked_at": "2026-11-27"
+  },
+  {
+    "id": "yandex-15664259821",
+    "code": "magnit",
+    "address": "ул. Родники, 8, микрорайон Родники, Калининский район",
+    "lat": 55.112712,
+    "lng": 82.951022,
+    "source_url": "https://yandex.ru/maps/org/magnit/15664259821/",
+    "source_description": "Яндекс Карты, карточка филиала",
+    "status": "listed",
+    "checked_at": "2026-11-27"
+  },
+  {
+    "id": "yandex-15724800448",
+    "code": "maria-ra",
+    "address": "ул. Аэропорт, 51",
+    "lat": 55.078874,
+    "lng": 82.902101,
+    "source_url": "https://yandex.ru/maps/org/mariya_ra/15724800448/",
+    "source_description": "Яндекс Карты, карточка филиала",
+    "status": "listed",
+    "checked_at": "2026-11-27"
+  },
+  {
+    "id": "yandex-157873309124",
+    "code": "fix-price",
+    "address": "ул. Плахотного, 2Б",
+    "lat": 54.985694,
+    "lng": 82.859093,
+    "source_url": "https://yandex.ru/maps/org/fix_price/157873309124/",
+    "source_description": "Яндекс Карты, карточка филиала",
+    "status": "listed",
+    "checked_at": "2026-11-27"
+  },
+  {
+    "id": "yandex-1588208704",
+    "code": "fix-price",
+    "address": "просп. Дзержинского, 28/1",
+    "lat": 55.055512,
+    "lng": 82.97493,
+    "source_url": "https://yandex.ru/maps/org/fix_price/1588208704/",
+    "source_description": "Яндекс Карты, карточка филиала",
+    "status": "listed",
+    "checked_at": "2026-11-27"
+  },
+  {
+    "id": "yandex-159483490942",
+    "code": "fix-price",
+    "address": "Пермская ул., 27",
+    "lat": 54.986418,
+    "lng": 82.851412,
+    "source_url": "https://yandex.ru/maps/org/fix_price/159483490942/",
+    "source_description": "Яндекс Карты, карточка филиала",
+    "status": "listed",
+    "checked_at": "2026-11-27"
+  },
+  {
+    "id": "yandex-160605499616",
+    "code": "pyaterochka",
+    "address": "Рассветная ул., 11, микрорайон Снегири, Калининский район",
+    "lat": 55.109051,
+    "lng": 82.97207,
+    "source_url": "https://yandex.ru/maps/org/pyatyorochka/160605499616/",
+    "source_description": "Яндекс Карты, карточка филиала",
+    "status": "listed",
+    "checked_at": "2026-11-27"
+  },
+  {
+    "id": "yandex-161392732437",
+    "code": "fix-price",
+    "address": "Русская ул., 1, микрорайон Шлюз, Советский район",
+    "lat": 54.84947,
+    "lng": 83.041197,
+    "source_url": "https://yandex.ru/maps/org/fix_price/161392732437/",
+    "source_description": "Яндекс Карты, карточка филиала",
+    "status": "listed",
+    "checked_at": "2026-11-27"
+  },
+  {
+    "id": "yandex-163795930924",
+    "code": "pyaterochka",
+    "address": "ул. Курчатова, 15/2",
+    "lat": 55.106633,
+    "lng": 82.973196,
+    "source_url": "https://yandex.ru/maps/org/pyatyorochka/163795930924/",
+    "source_description": "Яндекс Карты, карточка филиала",
+    "status": "listed",
+    "checked_at": "2026-11-27"
+  },
+  {
+    "id": "yandex-16720573944",
+    "code": "maria-ra",
+    "address": "ул. Бориса Богаткова, 251",
+    "lat": 55.041558,
+    "lng": 82.98255,
+    "source_url": "https://yandex.ru/maps/org/mariya_ra/16720573944/",
+    "source_description": "Яндекс Карты, карточка филиала",
+    "status": "listed",
+    "checked_at": "2026-11-27"
+  },
+  {
+    "id": "yandex-175022166867",
+    "code": "magnit",
+    "address": "Кубовая ул., 94/1",
+    "lat": 55.127042,
+    "lng": 82.900311,
+    "source_url": "https://yandex.ru/maps/org/magnit/175022166867/",
+    "source_description": "Яндекс Карты, карточка филиала",
+    "status": "listed",
+    "checked_at": "2026-11-27"
+  },
+  {
+    "id": "yandex-179524812722",
+    "code": "maria-ra",
+    "address": "Тамбовская ул., 41А, микрорайон Северный",
+    "lat": 55.100611,
+    "lng": 82.932888,
+    "source_url": "https://yandex.ru/maps/org/mariya_ra/179524812722/",
+    "source_description": "Яндекс Карты, карточка филиала",
+    "status": "listed",
+    "checked_at": "2026-11-27"
+  },
+  {
+    "id": "yandex-18214725380",
+    "code": "magnit",
+    "address": "ул. Забалуева, 50",
+    "lat": 54.990086,
+    "lng": 82.819615,
+    "source_url": "https://yandex.ru/maps/org/magnit/18214725380/",
+    "source_description": "Яндекс Карты, карточка филиала",
+    "status": "listed",
+    "checked_at": "2026-11-27"
+  },
+  {
+    "id": "yandex-1865071525",
+    "code": "maria-ra",
+    "address": "ул. Станиславского, 12",
+    "lat": 54.982921,
+    "lng": 82.871176,
+    "source_url": "https://yandex.ru/maps/org/mariya_ra/1865071525/",
+    "source_description": "Яндекс Карты, карточка филиала",
+    "status": "listed",
+    "checked_at": "2026-11-27"
+  },
+  {
+    "id": "yandex-188267959449",
+    "code": "fix-price",
+    "address": "ул. Доватора, 31А",
+    "lat": 55.040429,
+    "lng": 82.99952,
+    "source_url": "https://yandex.ru/maps/org/fix_price/188267959449/",
+    "source_description": "Яндекс Карты, карточка филиала",
+    "status": "listed",
+    "checked_at": "2026-11-27"
+  },
+  {
+    "id": "yandex-18988453122",
+    "code": "maria-ra",
+    "address": "просп. Дзержинского, 32",
+    "lat": 55.056587,
+    "lng": 82.97723,
+    "source_url": "https://yandex.ru/maps/org/mariya_ra/18988453122/",
+    "source_description": "Яндекс Карты, карточка филиала",
+    "status": "listed",
+    "checked_at": "2026-11-27"
+  },
+  {
+    "id": "yandex-191444793804",
+    "code": "fix-price",
+    "address": "ул. Бориса Богаткова, 251А",
+    "lat": 55.042187,
+    "lng": 82.98317,
+    "source_url": "https://yandex.ru/maps/org/fix_price/191444793804/",
+    "source_description": "Яндекс Карты, карточка филиала",
+    "status": "listed",
+    "checked_at": "2026-11-27"
+  },
+  {
+    "id": "yandex-200125326236",
+    "code": "maria-ra",
+    "address": "Красный просп., 13",
+    "lat": 55.024434,
+    "lng": 82.921575,
+    "source_url": "https://yandex.ru/maps/org/mariya_ra/200125326236/",
+    "source_description": "Яндекс Карты, карточка филиала",
+    "status": "listed",
+    "checked_at": "2026-11-27"
+  },
+  {
+    "id": "yandex-201010541309",
+    "code": "fix-price",
+    "address": "ул. Есенина, 12/5",
+    "lat": 55.048245,
+    "lng": 82.985423,
+    "source_url": "https://yandex.ru/maps/org/fix_price/201010541309/",
+    "source_description": "Яндекс Карты, карточка филиала",
+    "status": "listed",
+    "checked_at": "2026-11-27"
+  },
+  {
+    "id": "yandex-20420362581",
+    "code": "fix-price",
+    "address": "просп. Карла Маркса, 5",
+    "lat": 54.984414,
+    "lng": 82.897729,
+    "source_url": "https://yandex.ru/maps/org/fix_price/20420362581/",
+    "source_description": "Яндекс Карты, карточка филиала",
+    "status": "listed",
+    "checked_at": "2026-11-27"
+  },
+  {
+    "id": "yandex-208789948795",
+    "code": "pyaterochka",
+    "address": "микрорайон Горский, 84, корп. 1",
+    "lat": 54.992998,
+    "lng": 82.8875,
+    "source_url": "https://yandex.ru/maps/org/pyatyorochka/208789948795/",
+    "source_description": "Яндекс Карты, результат поиска; актуальность и вход требуют проверки",
+    "status": "review"
+  },
+  {
+    "id": "yandex-210060223884",
+    "code": "pyaterochka",
+    "address": "Кубовая ул., 106/1",
+    "lat": 55.128681,
+    "lng": 82.890065,
+    "source_url": "https://yandex.ru/maps/org/pyatyorochka/210060223884/",
+    "source_description": "Яндекс Карты, карточка филиала",
+    "status": "listed",
+    "checked_at": "2026-11-27"
+  },
+  {
+    "id": "yandex-213123347011",
+    "code": "maria-ra",
+    "address": "Петропавловская ул., 1",
+    "lat": 54.98533,
+    "lng": 82.862882,
+    "source_url": "https://yandex.ru/maps/org/mariya_ra/213123347011/",
+    "source_description": "Яндекс Карты, карточка филиала",
+    "status": "listed",
+    "checked_at": "2026-11-27"
+  },
+  {
+    "id": "yandex-213423207662",
+    "code": "maria-ra",
+    "address": "Большая ул., 608",
+    "lat": 55.028366,
+    "lng": 82.809485,
+    "source_url": "https://yandex.ru/maps/org/mariya_ra/213423207662/",
+    "source_description": "Яндекс Карты, карточка филиала",
+    "status": "listed",
+    "checked_at": "2026-11-27"
+  },
+  {
+    "id": "yandex-215539928909",
+    "code": "pyaterochka",
+    "address": "Кубовая ул., 91",
+    "lat": 55.127243,
+    "lng": 82.899234,
+    "source_url": "https://yandex.ru/maps/org/pyatyorochka/215539928909/",
+    "source_description": "Яндекс Карты, карточка филиала",
+    "status": "listed",
+    "checked_at": "2026-11-27"
+  },
+  {
+    "id": "yandex-217203366938",
+    "code": "fix-price",
+    "address": "Выборная ул., 144",
+    "lat": 55.002979,
+    "lng": 83.022495,
+    "source_url": "https://yandex.ru/maps/org/fix_price/217203366938/",
+    "source_description": "Яндекс Карты, карточка филиала",
+    "status": "listed",
+    "checked_at": "2026-11-27"
+  },
+  {
+    "id": "yandex-217709347173",
+    "code": "magnit",
+    "address": "Троллейная ул., 17/1",
+    "lat": 54.988058,
+    "lng": 82.85854,
+    "source_url": "https://yandex.ru/maps/org/magnit/217709347173/",
+    "source_description": "Яндекс Карты, карточка филиала",
+    "status": "listed",
+    "checked_at": "2026-11-27"
+  },
+  {
+    "id": "yandex-21791782434",
+    "code": "magnit",
+    "address": "ул. Станиславского, 22",
+    "lat": 54.977886,
+    "lng": 82.871932,
+    "source_url": "https://yandex.ru/maps/org/magnit/21791782434/",
+    "source_description": "Яндекс Карты, карточка филиала",
+    "status": "listed",
+    "checked_at": "2026-11-27"
+  },
+  {
+    "id": "yandex-218292009679",
+    "code": "pyaterochka",
+    "address": "ул. Титова, 35/1",
+    "lat": 54.981383,
+    "lng": 82.866359,
+    "source_url": "https://yandex.ru/maps/org/pyatyorochka/218292009679/",
+    "source_description": "Яндекс Карты, карточка филиала",
+    "status": "listed",
+    "checked_at": "2026-11-27"
+  },
+  {
+    "id": "yandex-22695787576",
+    "code": "magnit",
+    "address": "ул. Гребенщикова, 4/1, микрорайон Родники, Калининский район",
+    "lat": 55.107976,
+    "lng": 82.939506,
+    "source_url": "https://yandex.ru/maps/org/magnit/22695787576/",
+    "source_description": "Яндекс Карты, карточка филиала",
+    "status": "listed",
+    "checked_at": "2026-11-27"
+  },
+  {
+    "id": "yandex-234978671938",
+    "code": "magnit",
+    "address": "ул. Богдана Хмельницкого, 19/3",
+    "lat": 55.070286,
+    "lng": 82.942139,
+    "source_url": "https://yandex.ru/maps/org/magnit/234978671938/",
+    "source_description": "Яндекс Карты, карточка филиала",
+    "status": "listed",
+    "checked_at": "2026-11-27"
+  },
+  {
+    "id": "yandex-235081797962",
+    "code": "maria-ra",
+    "address": "Вилюйская ул., 24",
+    "lat": 54.998784,
+    "lng": 83.007495,
+    "source_url": "https://yandex.ru/maps/org/mariya_ra/235081797962/",
+    "source_description": "Яндекс Карты, карточка филиала",
+    "status": "listed",
+    "checked_at": "2026-11-27"
+  },
+  {
+    "id": "yandex-236989608231",
+    "code": "pyaterochka",
+    "address": "Степная ул., 61А",
+    "lat": 54.977494,
+    "lng": 82.864043,
+    "source_url": "https://yandex.ru/maps/org/pyatyorochka/236989608231/",
+    "source_description": "Яндекс Карты, карточка филиала",
+    "status": "listed",
+    "checked_at": "2026-11-27"
+  },
+  {
+    "id": "yandex-239553947111",
+    "code": "magnit",
+    "address": "посёлок Озёрный, микрорайон Солнечный, 333",
+    "lat": 55.148967,
+    "lng": 82.911286,
+    "source_url": "https://yandex.ru/maps/org/magnit/239553947111/",
+    "source_description": "Яндекс Карты, результат поиска; актуальность и вход требуют проверки",
+    "status": "review"
+  },
+  {
+    "id": "yandex-239875579074",
+    "code": "maria-ra",
+    "address": "Рассветная ул., 13, микрорайон Снегири",
+    "lat": 55.109153,
+    "lng": 82.97273,
+    "source_url": "https://yandex.ru/maps/org/mariya_ra/239875579074/",
+    "source_description": "Яндекс Карты, карточка филиала",
+    "status": "listed",
+    "checked_at": "2026-11-27"
+  },
+  {
+    "id": "yandex-241263394141",
+    "code": "pyaterochka",
+    "address": "Выборная ул., 122/3",
+    "lat": 54.999874,
+    "lng": 83.012366,
+    "source_url": "https://yandex.ru/maps/org/pyatyorochka/241263394141/",
+    "source_description": "Яндекс Карты, карточка филиала",
+    "status": "listed",
+    "checked_at": "2026-11-27"
+  },
+  {
+    "id": "yandex-24134344318",
+    "code": "fix-price",
+    "address": "Красный просп., 319",
+    "lat": 55.113354,
+    "lng": 82.929999,
+    "source_url": "https://yandex.ru/maps/org/fix_price/24134344318/",
+    "source_description": "Яндекс Карты, карточка филиала",
+    "status": "listed",
+    "checked_at": "2026-11-27"
+  },
+  {
+    "id": "yandex-242022811243",
+    "code": "maria-ra",
+    "address": "ул. Терешковой, 12, микрорайон Академгородок, Советский район",
+    "lat": 54.841203,
+    "lng": 83.102109,
+    "source_url": "https://yandex.ru/maps/org/mariya_ra/242022811243/",
+    "source_description": "Яндекс Карты, карточка филиала",
+    "status": "listed",
+    "checked_at": "2026-11-27"
+  },
+  {
+    "id": "yandex-24395838721",
+    "code": "maria-ra",
+    "address": "ул. Ясный Берег, 1А",
+    "lat": 55.018179,
+    "lng": 82.891221,
+    "source_url": "https://yandex.ru/maps/org/mariya_ra/24395838721/",
+    "source_description": "Яндекс Карты, карточка филиала",
+    "status": "listed",
+    "checked_at": "2026-11-27"
+  },
+  {
+    "id": "yandex-26285492711",
+    "code": "magnit",
+    "address": "ул. Даргомыжского, 8А",
+    "lat": 55.072937,
+    "lng": 82.926503,
+    "source_url": "https://yandex.ru/maps/org/magnit/26285492711/",
+    "source_description": "Яндекс Карты, карточка филиала",
+    "status": "listed",
+    "checked_at": "2026-11-27"
+  },
+  {
+    "id": "yandex-26342637013",
+    "code": "pyaterochka",
+    "address": "ул. Юности, 1/1",
+    "lat": 55.027436,
+    "lng": 82.807481,
+    "source_url": "https://yandex.ru/maps/org/pyatyorochka/26342637013/",
+    "source_description": "Яндекс Карты, карточка филиала",
+    "status": "listed",
+    "checked_at": "2026-11-27"
+  },
+  {
+    "id": "yandex-26438426584",
+    "code": "magnit",
+    "address": "Широкая ул., 137/3",
+    "lat": 54.991203,
+    "lng": 82.837422,
+    "source_url": "https://yandex.ru/maps/org/magnit/26438426584/",
+    "source_description": "Яндекс Карты, карточка филиала",
+    "status": "listed",
+    "checked_at": "2026-11-27"
+  },
+  {
+    "id": "yandex-29415205207",
+    "code": "magnit",
+    "address": "Серебренниковская ул., 14",
+    "lat": 55.021269,
+    "lng": 82.927121,
+    "source_url": "https://yandex.ru/maps/org/magnit/29415205207/",
+    "source_description": "Яндекс Карты, карточка филиала",
+    "status": "listed",
+    "checked_at": "2026-11-27"
+  },
+  {
+    "id": "yandex-33121887100",
+    "code": "maria-ra",
+    "address": "ул. Невельского, 59",
+    "lat": 54.991858,
+    "lng": 82.811402,
+    "source_url": "https://yandex.ru/maps/org/mariya_ra/33121887100/",
+    "source_description": "Яндекс Карты, карточка филиала",
+    "status": "listed",
+    "checked_at": "2026-11-27"
+  },
+  {
+    "id": "yandex-34976682287",
+    "code": "maria-ra",
+    "address": "ул. Тюленина, 17/1",
+    "lat": 55.111289,
+    "lng": 82.941638,
+    "source_url": "https://yandex.ru/maps/org/mariya_ra/34976682287/",
+    "source_description": "Яндекс Карты, карточка филиала",
+    "status": "listed",
+    "checked_at": "2026-11-27"
+  },
+  {
+    "id": "yandex-38197686169",
+    "code": "magnit",
+    "address": "Рассветная ул., 2/5, микрорайон Снегири, Калининский район",
+    "lat": 55.109902,
+    "lng": 82.970846,
+    "source_url": "https://yandex.ru/maps/org/magnit/38197686169/",
+    "source_description": "Яндекс Карты, карточка филиала",
+    "status": "listed",
+    "checked_at": "2026-11-27"
+  },
+  {
+    "id": "yandex-40409167676",
+    "code": "fix-price",
+    "address": "Вертковская ул., 35/1",
+    "lat": 54.974843,
+    "lng": 82.879472,
+    "source_url": "https://yandex.ru/maps/org/fix_price/40409167676/",
+    "source_description": "Яндекс Карты, карточка филиала",
+    "status": "listed",
+    "checked_at": "2026-11-27"
+  },
+  {
+    "id": "yandex-43094208610",
+    "code": "pyaterochka",
+    "address": "ул. Фадеева, 22А",
+    "lat": 55.092057,
+    "lng": 82.937154,
+    "source_url": "https://yandex.ru/maps/org/pyatyorochka/43094208610/",
+    "source_description": "Яндекс Карты, карточка филиала",
+    "status": "listed",
+    "checked_at": "2026-11-27"
+  },
+  {
+    "id": "yandex-43943771223",
+    "code": "maria-ra",
+    "address": "Междуреченская ул., 3/2",
+    "lat": 55.022213,
+    "lng": 82.859295,
+    "source_url": "https://yandex.ru/maps/org/mariya_ra/43943771223/",
+    "source_description": "Яндекс Карты, карточка филиала",
+    "status": "listed",
+    "checked_at": "2026-11-27"
+  },
+  {
+    "id": "yandex-45678688629",
+    "code": "maria-ra",
+    "address": "Степная ул., 63",
+    "lat": 54.977704,
+    "lng": 82.862798,
+    "source_url": "https://yandex.ru/maps/org/mariya_ra/45678688629/",
+    "source_description": "Яндекс Карты, карточка филиала",
+    "status": "listed",
+    "checked_at": "2026-11-27"
+  },
+  {
+    "id": "yandex-45697018907",
+    "code": "pyaterochka",
+    "address": "ул. Есенина, 29А",
+    "lat": 55.047692,
+    "lng": 82.986573,
+    "source_url": "https://yandex.ru/maps/org/pyatyorochka/45697018907/",
+    "source_description": "Яндекс Карты, карточка филиала",
+    "status": "listed",
+    "checked_at": "2026-11-27"
+  },
+  {
+    "id": "yandex-45881558307",
+    "code": "maria-ra",
+    "address": "ул. Крылова, 53/1",
+    "lat": 55.042408,
+    "lng": 82.934027,
+    "source_url": "https://yandex.ru/maps/org/mariya_ra/45881558307/",
+    "source_description": "Яндекс Карты, карточка филиала",
+    "status": "listed",
+    "checked_at": "2026-11-27"
+  },
+  {
+    "id": "yandex-4784643021",
+    "code": "maria-ra",
+    "address": "Выборная ул., 115/2",
+    "lat": 55.002479,
+    "lng": 83.017654,
+    "source_url": "https://yandex.ru/maps/org/mariya_ra/4784643021/",
+    "source_description": "Яндекс Карты, карточка филиала",
+    "status": "listed",
+    "checked_at": "2026-11-27"
+  },
+  {
+    "id": "yandex-48556444600",
+    "code": "maria-ra",
+    "address": "просп. Дзержинского, 33",
+    "lat": 55.05457,
+    "lng": 82.971684,
+    "source_url": "https://yandex.ru/maps/org/mariya_ra/48556444600/",
+    "source_description": "Яндекс Карты, карточка филиала",
+    "status": "listed",
+    "checked_at": "2026-11-27"
+  },
+  {
+    "id": "yandex-49536203439",
+    "code": "pyaterochka",
+    "address": "ул. Забалуева, 22",
+    "lat": 54.990388,
+    "lng": 82.826752,
+    "source_url": "https://yandex.ru/maps/org/pyatyorochka/49536203439/",
+    "source_description": "Яндекс Карты, карточка филиала",
+    "status": "listed",
+    "checked_at": "2026-11-27"
+  },
+  {
+    "id": "yandex-52052788342",
+    "code": "pyaterochka",
+    "address": "Пермская ул., 27",
+    "lat": 54.986275,
+    "lng": 82.851409,
+    "source_url": "https://yandex.ru/maps/org/pyatyorochka/52052788342/",
+    "source_description": "Яндекс Карты, карточка филиала",
+    "status": "listed",
+    "checked_at": "2026-11-27"
+  },
+  {
+    "id": "yandex-53668991256",
+    "code": "magnit",
+    "address": "Шлюзовая ул., 26А, микрорайон Шлюз, Советский район",
+    "lat": 54.852699,
+    "lng": 83.045134,
+    "source_url": "https://yandex.ru/maps/org/magnit/53668991256/",
+    "source_description": "Яндекс Карты, карточка филиала",
+    "status": "listed",
+    "checked_at": "2026-11-27"
+  },
+  {
+    "id": "yandex-54893145967",
+    "code": "magnit",
+    "address": "посёлок Садовый, микрорайон Берёзки-3, 1А",
+    "lat": 55.163151,
+    "lng": 82.927132,
+    "source_url": "https://yandex.ru/maps/org/magnit/54893145967/",
+    "source_description": "Яндекс Карты, карточка филиала",
+    "status": "listed",
+    "checked_at": "2026-11-27"
+  },
+  {
+    "id": "yandex-58239803129",
+    "code": "maria-ra",
+    "address": "ул. Курчатова, 11/1",
+    "lat": 55.105356,
+    "lng": 82.968464,
+    "source_url": "https://yandex.ru/maps/org/mariya_ra/58239803129/",
+    "source_description": "Яндекс Карты, карточка филиала",
+    "status": "listed",
+    "checked_at": "2026-11-27"
+  },
+  {
+    "id": "yandex-59616931905",
+    "code": "maria-ra",
+    "address": "ул. Надежды, 2А",
+    "lat": 55.023504,
+    "lng": 82.812208,
+    "source_url": "https://yandex.ru/maps/org/mariya_ra/59616931905/",
+    "source_description": "Яндекс Карты, карточка филиала",
+    "status": "listed",
+    "checked_at": "2026-11-27"
+  },
+  {
+    "id": "yandex-6251530794",
+    "code": "maria-ra",
+    "address": "ул. Объединения, 29",
+    "lat": 55.097815,
+    "lng": 82.96623,
+    "source_url": "https://yandex.ru/maps/org/mariya_ra/6251530794/",
+    "source_description": "Яндекс Карты, карточка филиала",
+    "status": "listed",
+    "checked_at": "2026-11-27"
+  },
+  {
+    "id": "yandex-63703027109",
+    "code": "fix-price",
+    "address": "ул. Кочубея, 3/1",
+    "lat": 55.106457,
+    "lng": 82.9557,
+    "source_url": "https://yandex.ru/maps/org/fix_price/63703027109/",
+    "source_description": "Яндекс Карты, карточка филиала",
+    "status": "listed",
+    "checked_at": "2026-11-27"
+  },
+  {
+    "id": "yandex-64404958611",
+    "code": "fix-price",
+    "address": "ул. Семьи Шамшиных, 88",
+    "lat": 55.046157,
+    "lng": 82.928782,
+    "source_url": "https://yandex.ru/maps/org/fix_price/64404958611/",
+    "source_description": "Яндекс Карты, карточка филиала",
+    "status": "listed",
+    "checked_at": "2026-11-27"
+  },
+  {
+    "id": "yandex-64979324796",
+    "code": "fix-price",
+    "address": "Троллейная ул., 22/1",
+    "lat": 54.990173,
+    "lng": 82.85546,
+    "source_url": "https://yandex.ru/maps/org/fix_price/64979324796/",
+    "source_description": "Яндекс Карты, карточка филиала",
+    "status": "listed",
+    "checked_at": "2026-11-27"
+  },
+  {
+    "id": "yandex-67015793900",
+    "code": "fix-price",
+    "address": "ул. Гоголя, 43/1",
+    "lat": 55.044207,
+    "lng": 82.938185,
+    "source_url": "https://yandex.ru/maps/org/fix_price/67015793900/",
+    "source_description": "Яндекс Карты, карточка филиала",
+    "status": "listed",
+    "checked_at": "2026-11-27"
+  },
+  {
+    "id": "yandex-67550582560",
+    "code": "pyaterochka",
+    "address": "ул. Фадеева, 66/7",
+    "lat": 55.098316,
+    "lng": 82.940231,
+    "source_url": "https://yandex.ru/maps/org/pyatyorochka/67550582560/",
+    "source_description": "Яндекс Карты, карточка филиала",
+    "status": "listed",
+    "checked_at": "2026-11-27"
+  },
+  {
+    "id": "yandex-69009010247",
+    "code": "maria-ra",
+    "address": "Степная ул., 55",
+    "lat": 54.97784,
+    "lng": 82.867565,
+    "source_url": "https://yandex.ru/maps/org/mariya_ra/69009010247/",
+    "source_description": "Яндекс Карты, карточка филиала",
+    "status": "listed",
+    "checked_at": "2026-11-27"
+  },
+  {
+    "id": "yandex-69082180307",
+    "code": "pyaterochka",
+    "address": "посёлок Озёрный, микрорайон Солнечный, 333Б",
+    "lat": 55.146533,
+    "lng": 82.902129,
+    "source_url": "https://yandex.ru/maps/org/pyatyorochka/69082180307/",
+    "source_description": "Яндекс Карты, результат поиска; актуальность и вход требуют проверки",
+    "status": "review"
+  },
+  {
+    "id": "yandex-69486684698",
+    "code": "pyaterochka",
+    "address": "ул. Бориса Богаткова, 251А",
+    "lat": 55.042246,
+    "lng": 82.983312,
+    "source_url": "https://yandex.ru/maps/org/pyatyorochka/69486684698/",
+    "source_description": "Яндекс Карты, карточка филиала",
+    "status": "listed",
+    "checked_at": "2026-11-27"
+  },
+  {
+    "id": "yandex-70004516894",
+    "code": "fix-price",
+    "address": "ул. Забалуева, 84/1",
+    "lat": 54.989695,
+    "lng": 82.785351,
+    "source_url": "https://yandex.ru/maps/org/fix_price/70004516894/",
+    "source_description": "Яндекс Карты, карточка филиала",
+    "status": "listed",
+    "checked_at": "2026-11-27"
+  },
+  {
+    "id": "yandex-7063944675",
+    "code": "fix-price",
+    "address": "ул. Гребенщикова, 4/1, микрорайон Родники, Калининский район",
+    "lat": 55.107957,
+    "lng": 82.939546,
+    "source_url": "https://yandex.ru/maps/org/fix_price/7063944675/",
+    "source_description": "Яндекс Карты, карточка филиала",
+    "status": "listed",
+    "checked_at": "2026-11-27"
+  },
+  {
+    "id": "yandex-72508615991",
+    "code": "pyaterochka",
+    "address": "ул. Королёва, 10/1",
+    "lat": 55.048263,
+    "lng": 82.971398,
+    "source_url": "https://yandex.ru/maps/org/pyatyorochka/72508615991/",
+    "source_description": "Яндекс Карты, карточка филиала",
+    "status": "listed",
+    "checked_at": "2026-11-27"
+  },
+  {
+    "id": "yandex-74815532388",
+    "code": "pyaterochka",
+    "address": "Выборная ул., 117/3",
+    "lat": 55.003294,
+    "lng": 83.018642,
+    "source_url": "https://yandex.ru/maps/org/pyatyorochka/74815532388/",
+    "source_description": "Яндекс Карты, карточка филиала",
+    "status": "listed",
+    "checked_at": "2026-11-27"
+  },
+  {
+    "id": "yandex-75270040989",
+    "code": "pyaterochka",
+    "address": "ул. Земнухова, 6/3, микрорайон Родники, Калининский район",
+    "lat": 55.109835,
+    "lng": 82.952148,
+    "source_url": "https://yandex.ru/maps/org/pyatyorochka/75270040989/",
+    "source_description": "Яндекс Карты, карточка филиала",
+    "status": "listed",
+    "checked_at": "2026-11-27"
+  },
+  {
+    "id": "yandex-77822197040",
+    "code": "fix-price",
+    "address": "ул. Тюленина, 17/1",
+    "lat": 55.111196,
+    "lng": 82.941524,
+    "source_url": "https://yandex.ru/maps/org/fix_price/77822197040/",
+    "source_description": "Яндекс Карты, карточка филиала",
+    "status": "listed",
+    "checked_at": "2026-11-27"
+  },
+  {
+    "id": "yandex-77933693247",
+    "code": "fix-price",
+    "address": "Выборная ул., 87/5",
+    "lat": 55.000078,
+    "lng": 83.009521,
+    "source_url": "https://yandex.ru/maps/org/fix_price/77933693247/",
+    "source_description": "Яндекс Карты, карточка филиала",
+    "status": "listed",
+    "checked_at": "2026-11-27"
+  },
+  {
+    "id": "yandex-86499634146",
+    "code": "magnit",
+    "address": "Выборная ул., 131/2",
+    "lat": 55.005282,
+    "lng": 83.028431,
+    "source_url": "https://yandex.ru/maps/org/magnit/86499634146/",
+    "source_description": "Яндекс Карты, карточка филиала",
+    "status": "listed",
+    "checked_at": "2026-11-27"
+  },
+  {
+    "id": "yandex-87152172839",
+    "code": "fix-price",
+    "address": "ул. Забалуева, 51А",
+    "lat": 54.988291,
+    "lng": 82.807024,
+    "source_url": "https://yandex.ru/maps/org/fix_price/87152172839/",
+    "source_description": "Яндекс Карты, карточка филиала",
+    "status": "listed",
+    "checked_at": "2026-11-27"
+  },
+  {
+    "id": "yandex-88046944416",
+    "code": "pyaterochka",
+    "address": "ул. Земнухова, 5/2, микрорайон Родники, Калининский район",
+    "lat": 55.108748,
+    "lng": 82.954916,
+    "source_url": "https://yandex.ru/maps/org/pyatyorochka/88046944416/",
+    "source_description": "Яндекс Карты, карточка филиала",
+    "status": "listed",
+    "checked_at": "2026-11-27"
+  },
+  {
+    "id": "yandex-88229459441",
+    "code": "maria-ra",
+    "address": "ул. Аэропорт, 45",
+    "lat": 55.075782,
+    "lng": 82.908352,
+    "source_url": "https://yandex.ru/maps/org/mariya_ra/88229459441/",
+    "source_description": "Яндекс Карты, карточка филиала",
+    "status": "listed",
+    "checked_at": "2026-11-27"
+  },
+  {
+    "id": "yandex-8886637819",
+    "code": "pyaterochka",
+    "address": "ул. Аэропорт, 59/1",
+    "lat": 55.076627,
+    "lng": 82.908397,
+    "source_url": "https://yandex.ru/maps/org/pyatyorochka/8886637819/",
+    "source_description": "Яндекс Карты, карточка филиала",
+    "status": "listed",
+    "checked_at": "2026-11-27"
+  },
+  {
+    "id": "yandex-9047021450",
+    "code": "fix-price",
+    "address": "ул. Богдана Хмельницкого, 16",
+    "lat": 55.069372,
+    "lng": 82.942188,
+    "source_url": "https://yandex.ru/maps/org/fix_price/9047021450/",
+    "source_description": "Яндекс Карты, карточка филиала",
+    "status": "listed",
+    "checked_at": "2026-11-27"
+  },
+  {
+    "id": "yandex-90705943864",
+    "code": "fix-price",
+    "address": "ул. Бориса Богаткова, 163/11",
+    "lat": 55.033002,
+    "lng": 82.97087,
+    "source_url": "https://yandex.ru/maps/org/fix_price/90705943864/",
+    "source_description": "Яндекс Карты, карточка филиала",
+    "status": "listed",
+    "checked_at": "2026-11-27"
+  },
+  {
+    "id": "yandex-90792499714",
+    "code": "maria-ra",
+    "address": "Фасадная ул., 20А",
+    "lat": 54.986845,
+    "lng": 82.819352,
+    "source_url": "https://yandex.ru/maps/org/mariya_ra/90792499714/",
+    "source_description": "Яндекс Карты, карточка филиала",
+    "status": "listed",
+    "checked_at": "2026-11-27"
+  },
+  {
+    "id": "yandex-93744189778",
+    "code": "maria-ra",
+    "address": "ул. Фадеева, 83/1",
+    "lat": 55.097982,
+    "lng": 82.935834,
+    "source_url": "https://yandex.ru/maps/org/mariya_ra/93744189778/",
+    "source_description": "Яндекс Карты, карточка филиала",
+    "status": "listed",
+    "checked_at": "2026-11-27"
+  },
+  {
+    "id": "yandex-98023104707",
+    "code": "maria-ra",
+    "address": "ул. Дмитрия Шамшурина, 10",
+    "lat": 55.031888,
+    "lng": 82.901119,
+    "source_url": "https://yandex.ru/maps/org/mariya_ra/98023104707/",
+    "source_description": "Яндекс Карты, карточка филиала",
+    "status": "listed",
+    "checked_at": "2026-11-27"
+  },
+  {
+    "id": "yandex-99455418523",
+    "code": "pyaterochka",
+    "address": "Пролетарская ул., 271В",
+    "lat": 54.989567,
+    "lng": 83.039067,
+    "source_url": "https://yandex.ru/maps/org/pyatyorochka/99455418523/",
+    "source_description": "Яндекс Карты, карточка филиала",
+    "status": "listed",
+    "checked_at": "2026-11-27"
+  },
+  {
+    "id": "r1",
+    "code": "maria-ra",
+    "address": "ул. Громова, 22/2",
+    "lat": 54.932938,
+    "lng": 82.907499,
+    "status": "review"
+  },
+  {
+    "id": "r11",
+    "code": "fix-price",
+    "address": "ул. Объединения, 35/3",
+    "lat": 55.099183,
+    "lng": 82.971231,
+    "status": "review"
+  },
+  {
+    "id": "r12",
+    "code": "fix-price",
+    "address": "ул. Станиславского, 40/1",
+    "lat": 54.968942,
+    "lng": 82.872558,
+    "status": "review"
+  },
+  {
+    "id": "r13",
+    "code": "chizhik",
+    "address": "Красный проспект, 218/2",
+    "lat": 55.066809,
+    "lng": 82.9115,
+    "status": "review"
+  },
+  {
+    "id": "r14",
+    "code": "chizhik",
+    "address": "ул. Плахотного, 2а",
+    "lat": 54.986228,
+    "lng": 82.861207,
+    "status": "review"
+  },
+  {
+    "id": "r15",
+    "code": "chizhik",
+    "address": "ул. Объединения, 94",
+    "lat": 55.097733,
+    "lng": 82.968274,
+    "status": "review"
+  },
+  {
+    "id": "r16",
+    "code": "chizhik",
+    "address": "ул. Есенина, 12/4",
+    "lat": 55.046794,
+    "lng": 82.986022,
+    "status": "review"
+  },
+  {
+    "id": "r3",
+    "code": "maria-ra",
+    "address": "пр. Карла Маркса, 37/2",
+    "lat": 54.989144,
+    "lng": 82.904925,
+    "status": "review"
+  },
+  {
+    "id": "r5",
+    "code": "pyaterochka",
+    "address": "Красный проспект, 218/2",
+    "lat": 55.066442,
+    "lng": 82.91135,
+    "status": "review"
+  },
+  {
+    "id": "r8",
+    "code": "magnit",
+    "address": "ул. Челюскинцев, 14/1",
+    "lat": 55.038093,
+    "lng": 82.90254,
+    "status": "review"
+  },
+  {
+    "id": "r9",
+    "code": "magnit",
+    "address": "ул. Учительская, 46",
+    "lat": 55.083668,
+    "lng": 82.962908,
+    "status": "review"
+  },
+  {
+    "id": "yandex-5584426871",
+    "code": "magnit",
+    "address": "ул. Титова, 33",
+    "lat": 54.981584,
+    "lng": 82.867922,
+    "source_url": "https://yandex.ru/maps/org/magnit/5584426871/",
+    "source_description": "Яндекс Карты, карточка филиала",
+    "status": "listed",
+    "checked_at": "2026-11-27"
+  },
+  {
+    "id": "yandex-112897922468",
+    "code": "magnit",
+    "address": "ул. Романтиков, 1, микрорайон Дивногорский, Ленинский район",
+    "lat": 55.024489,
+    "lng": 82.812635,
+    "source_url": "https://yandex.ru/maps/org/magnit/112897922468/",
+    "source_description": "Яндекс Карты, карточка филиала",
+    "status": "listed",
+    "checked_at": "2026-11-27"
+  },
+  {
+    "id": "yandex-125134690164",
+    "code": "magnit",
+    "address": "ул. Земнухова, 15, микрорайон Родники, Калининский район",
+    "lat": 55.111749,
+    "lng": 82.956031,
+    "source_url": "https://yandex.ru/maps/org/magnit/125134690164/",
+    "source_description": "Яндекс Карты, карточка филиала",
+    "status": "listed",
+    "checked_at": "2026-11-27"
+  },
+  {
+    "id": "yandex-126374084558",
+    "code": "pyaterochka",
+    "address": "бул. Молодёжи, 15, микрорайон Академгородок, Советский район",
+    "lat": 54.864175,
+    "lng": 83.086263,
+    "source_url": "https://yandex.ru/maps/org/pyatyorochka/126374084558/",
+    "source_description": "Яндекс Карты, карточка филиала",
+    "status": "listed",
+    "checked_at": "2026-11-27"
+  },
+  {
+    "id": "yandex-17163579246",
+    "code": "pyaterochka",
+    "address": "ул. Демакова, 20, микрорайон Академгородок, Советский район",
+    "lat": 54.863429,
+    "lng": 83.109313,
+    "source_url": "https://yandex.ru/maps/org/pyatyorochka/17163579246/",
+    "source_description": "Яндекс Карты, карточка филиала",
+    "status": "listed",
+    "checked_at": "2026-11-27"
+  },
+  {
+    "id": "yandex-40154769923",
+    "code": "pyaterochka",
+    "address": "ул. Иванова, 30А, микрорайон Академгородок, Советский район",
+    "lat": 54.867832,
+    "lng": 83.093896,
+    "source_url": "https://yandex.ru/maps/org/pyatyorochka/40154769923/",
+    "source_description": "Яндекс Карты, карточка филиала",
+    "status": "listed",
+    "checked_at": "2026-11-27"
+  },
+  {
+    "id": "yandex-56488766522",
+    "code": "chizhik",
+    "address": "Вокзальная магистраль, 10/1",
+    "lat": 55.032681,
+    "lng": 82.908859,
+    "source_url": "https://yandex.ru/maps/org/chizhik/56488766522/",
+    "status": "listed",
+    "source_description": "Яндекс Карты, карточка филиала",
+    "checked_at": "2026-11-27"
+  },
+  {
+    "id": "yandex-130918169014",
+    "code": "chizhik",
+    "address": "Вокзальная магистраль, 4А",
+    "lat": 55.033977,
+    "lng": 82.902875,
+    "source_url": "https://yandex.ru/maps/org/chizhik/130918169014/",
+    "status": "listed",
+    "source_description": "Яндекс Карты, карточка филиала",
+    "checked_at": "2026-11-27"
+  },
+  {
+    "id": "yandex-96753160276",
+    "code": "chizhik",
+    "address": "ул. Шевченко, 34/1",
+    "lat": 55.022587,
+    "lng": 82.942205,
+    "source_url": "https://yandex.ru/maps/org/chizhik/96753160276/",
+    "status": "listed",
+    "source_description": "Яндекс Карты, карточка филиала",
+    "checked_at": "2026-11-27"
+  },
+  {
+    "id": "yandex-205532830748",
+    "code": "chizhik",
+    "address": "Зыряновская ул., 53",
+    "lat": 55.011505,
+    "lng": 82.937102,
+    "source_url": "https://yandex.ru/maps/org/chizhik/205532830748/",
+    "status": "listed",
+    "source_description": "Яндекс Карты, карточка филиала",
+    "checked_at": "2026-11-27"
+  },
+  {
+    "id": "yandex-189884217353",
+    "code": "chizhik",
+    "address": "ул. Челюскинцев, 14/2",
+    "lat": 55.038404,
+    "lng": 82.903461,
+    "source_url": "https://yandex.ru/maps/org/chizhik/189884217353/",
+    "status": "listed",
+    "source_description": "Яндекс Карты, карточка филиала",
+    "checked_at": "2026-11-27"
+  }
+]

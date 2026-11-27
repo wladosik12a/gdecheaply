@@ -24,8 +24,8 @@ export function useConveyorMotion(belt, paused, open, count) {
   handlers:{
    onPointerEnter:e=>{if(e.pointerType==='mouse')motion.current.hover=true},
    onPointerLeave:()=>{motion.current.hover=false},
-   onPointerDown:e=>{if(e.button!==0)return;const m=motion.current;m.target=null;m.skipClick=false;m.drag={x:e.clientX,start:e.clientX,offset:m.offset,id:e.pointerId};},
-   onPointerMove:e=>{const m=motion.current;if(!m.drag)return;const dx=e.clientX-m.drag.start;if(Math.abs(dx)>8){m.skipClick=true;belt.current.setPointerCapture(e.pointerId);m.offset=m.drag.offset+dx/Math.max(1,belt.current.clientWidth)*Math.PI*2;m.velocity=0;}},
+   onPointerDown:e=>{if(e.button!==0)return;const m=motion.current;m.target=null;m.skipClick=false;m.drag={start:e.clientX,offset:m.offset,id:e.pointerId};},
+   onPointerMove:e=>{const m=motion.current;if(!m.drag)return;const dx=e.clientX-m.drag.start;if(Math.abs(dx)>8){m.skipClick=true;belt.current.setPointerCapture(e.pointerId);m.offset=m.drag.offset-dx/Math.max(1,belt.current.clientWidth)*Math.PI*2;m.velocity=0;}},
    onPointerUp:()=>{motion.current.drag=null},
    onPointerCancel:()=>{motion.current.drag=null;motion.current.skipClick=true},
    onClickCapture:e=>{if(motion.current.skipClick){e.preventDefault();e.stopPropagation();motion.current.skipClick=false;}}

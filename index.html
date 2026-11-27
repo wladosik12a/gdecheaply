@@ -34,7 +34,7 @@
       <button class="big" data-go="history"><em>🕓</em>История<b>›</b></button>
       <button class="big" data-go="menu"><em>👨‍🍳</em>Меню<b>›</b></button>
     </div>
-    <div class="sec"><div class="sech"><h2>Магазины</h2><button class="findmini" data-go="findstore"><span>🗺️</span>Найти магазин</button></div><button data-go="stores">Все ›</button></div>
+    <div class="sec"><div class="sech"><h2>Магазины</h2><span id="homeFindStore"></span></div><button data-go="stores">Все ›</button></div>
     <div class="hrow" id="homeStores"></div>
     <div class="sec"><h2>Время перекусить!</h2><button data-go="snacks">Все ›</button></div>
     <div class="hrow" id="homeSnacks"></div>
@@ -131,6 +131,10 @@
   <div class="pad" id="snacksBody"></div>
 </section>
 
+<section class="screen" id="storeProduct">
+  <div class="top"><button class="ib back" data-back>‹</button><h1>Товар</h1><button class="ib" data-go="cart">🛒<i class="badge cnt"></i></button></div>
+  <div class="pad" id="storeProductBody"></div>
+</section>
 <section class="screen" id="product">
   <div class="top"><button class="ib back" data-back>‹</button><h1 id="prodTitle">Товар</h1><button class="ib" data-go="cart">🛒<i class="badge cnt"></i></button></div>
   <div class="pad" id="productBody"></div>

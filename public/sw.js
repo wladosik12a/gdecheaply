@@ -1,4 +1,4 @@
-const CACHE = 'gdecheaply-react-v2';
+const CACHE = 'gdecheaply-react-v3';
 self.addEventListener('install', event => {
   event.waitUntil(caches.open(CACHE).then(cache => cache.addAll(['./', './app.webmanifest', './logo.png', './legacy.js'])));
   self.skipWaiting();

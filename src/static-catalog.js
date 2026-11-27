@@ -1,0 +1,33 @@
+const base = import.meta.env.BASE_URL;
+let productsPromise;
+let offersPromise;
+const read = path => fetch(`${base}data/${path}`).then(r => {
+  if (!r.ok) throw new Error('Не удалось загрузить локальные данные');
+  return r.json();
+});
+const products = () => productsPromise ||= read('products.json').then(items => items.map(item => ({
+  ...item, image_url: item.image_url ? new URL(item.image_url, document.baseURI).href : null,
+})));
+const normalize = value => (value || '').toLocaleLowerCase('ru').replaceAll('ё', 'е').trim();
+
+window.staticCatalog = {
+  async search({q = '', category = '', store = '', sort = 'default', offset = 0, limit = 40} = {}) {
+    const needle = normalize(q);
+    const items = (await products()).filter(item =>
+      (!needle || normalize(item.name).includes(needle)) &&
+      (!category || category === item.category) &&
+      (!store || normalize(item.store).includes(normalize(store)) || (store === 'Магнит' && item.store === 'magnit.ru') || (store === 'Пятёрочка' && item.store === '5ka.ru')));
+    if (sort !== 'default') items.sort((a, b) => {
+      if (sort.startsWith('name')) return (sort === 'name_asc' ? 1 : -1) * a.name.localeCompare(b.name, 'ru');
+      if (a.price == null) return b.price == null ? 0 : 1;
+      if (b.price == null) return -1;
+      return (sort === 'price_asc' ? 1 : -1) * (Number(a.price) - Number(b.price));
+    });
+    return {items: items.slice(offset, offset + limit), next_offset: offset + limit < items.length ? offset + limit : null};
+  },
+  async offers(id) {
+    const all = await (offersPromise ||= read('master-offers.json'));
+    const list = id.startsWith('source-offer-') ? all.offers[id.slice(13)] : id.startsWith('inventory-') ? all.inventory[id.slice(10)] : null;
+    return list ? {offers: list} : null;
+  },
+};

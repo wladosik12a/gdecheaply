@@ -1,0 +1,30 @@
+/* Keep Tailwind utilities confined to new UI components and retain legacy styles. */
+@layer theme, base, components, utilities;
+@import "tailwindcss/theme.css" layer(theme);
+@import "tailwindcss/utilities.css" layer(utilities) source(none);
+@source "./components/ui/**/*.{ts,tsx}";
+
+@theme inline {
+  --color-background: var(--bg0);
+  --color-foreground: var(--txt);
+  --color-card: var(--bg1);
+  --color-card-foreground: var(--txt);
+  --color-popover: var(--bg1);
+  --color-popover-foreground: var(--txt);
+  --color-primary: var(--acc);
+  --color-primary-foreground: var(--btnt);
+  --color-secondary: var(--card2);
+  --color-secondary-foreground: var(--txt);
+  --color-muted: var(--card2);
+  --color-muted-foreground: var(--mut);
+  --color-accent: var(--card2);
+  --color-accent-foreground: var(--txt);
+  --color-destructive: var(--red);
+  --color-border: var(--line);
+  --color-input: var(--line);
+  --color-ring: var(--acc);
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-xl: 20px;
+}

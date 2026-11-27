@@ -344,9 +344,10 @@ const R = {
       <div class="card" style="display:flex;align-items:center;gap:14px;padding:14px">${sb(sid, 'm')}<div style="font-size:17px;font-weight:600;flex:1">${SM[sid].n}<div class="hint" style="margin:2px 0 0">📍 ${minutes(sid)} мин от вас</div></div></div>
       <label class="search" style="margin-top:12px;height:50px">🔎<input id="sq" placeholder="Найти в магазине" autocomplete="off" data-sid="${sid}"></label>
       <div class="hrow chipsrow" id="scats" style="margin-top:6px"></div>
-      <div class="grid2" id="sgrid" style="margin-top:10px"></div>`;
-    STORECAT = ''; renderStoreGrid(sid, '');
+      <div class="grid2" id="sgrid" style="margin-top:10px"></div><div id="storeReal"></div>`;
+    STORECAT = ''; renderStoreGrid(sid, ''); loadStoreProducts(sid, '');
   },
+  storeProduct(product) { window.renderReactScreen('storeProduct', {product}); },
   snacks() { $('#snacksBody').innerHTML = `<div class="grid2">${SNACKS.map(pid => gridCard(pid)).join('')}</div>`; },
   product(a) {
     const o = typeof a === 'object' && a ? a : {pid: +a};
@@ -380,29 +381,60 @@ const R = {
 };
 
 let searchRequest = 0;
-const publicApiBase = window.GDECHEAPLY_API_BASE || '';
-const publicApiHeaders = /(?:\.tuna\.am|\.tuna\.free)$/.test(new URL(publicApiBase || location.origin).hostname) ? {'tuna-skip-browser-warning':'true'} : {};
+let browseItems = [];
+let browseOffset = null;
+let browseLoading = false;
+let browseSort = 'default';
+let browseCategory = '';
+const browseNotice = 'Данные сохранены 27.11.2026. Цены могут измениться; наличие по адресу не подтверждено.';
+async function loadBrowsePage(request, offset) {
+  if (browseLoading) return;
+  browseLoading = true;
+  try {
+    const data = await window.staticCatalog.search({offset, limit:40, sort:browseSort, category:browseCategory});
+    if (request !== searchRequest) return;
+    browseItems.push(...data.items.map(item => ({...item, image_url:item.image_url})));
+    browseOffset = data.next_offset;
+    window.renderReactScreen('results', {query:'', products:browseItems, message:browseItems.length ? browseNotice : 'Товары пока не загружены.', hasMore:browseOffset !== null});
+  } catch (error) {
+    if (request === searchRequest) window.renderReactScreen('results', {query:'', products:browseItems, message:'Не удалось загрузить каталог. Попробуйте ещё раз.', hasMore:browseOffset !== null});
+  } finally { browseLoading = false; }
+}
+window.setBrowseCategory = category => { browseCategory = category; renderResults(document.getElementById('q')?.value || ''); };
+window.setBrowseSort = sort => { browseSort = sort; renderResults(document.getElementById('q')?.value || ''); };
+window.loadMoreBrowse = () => { if (browseOffset !== null) loadBrowsePage(searchRequest, browseOffset); };
 async function renderResults(q) {
   const request = ++searchRequest;
+  if (!q.trim()) { browseItems = []; browseOffset = 0; browseLoading = false; window.renderReactScreen('results', {query:q, products:[], message:'Загружаем товары…'}); loadBrowsePage(request, 0); return; }
   if (q.trim().length < 2) { window.renderReactScreen('results', {query:q, products:[], message:'Введите не менее двух символов'}); return; }
   window.renderReactScreen('results', {query:q, products:[], message:'Ищем в базе…'});
   try {
-    if (!publicApiBase && !['localhost','127.0.0.1'].includes(location.hostname)) throw new Error('Сервер не подключён');
-    const params = new URLSearchParams({q});
-    const [response, unifiedResponse] = await Promise.all([fetch(publicApiBase + '/api/public/products?' + params, {headers:publicApiHeaders,signal:AbortSignal.timeout(12000)}), fetch(publicApiBase + '/api/public/unified-products?' + params, {headers:publicApiHeaders,signal:AbortSignal.timeout(12000)})]);
-    if (!response.ok || !unifiedResponse.ok) throw new Error('API недоступен');
-    const [data, unified] = await Promise.all([response.json(), unifiedResponse.json()]);
-    const covered = new Set(unified.items.flatMap(item => (item.covered_entry_ids || []).map(id => 'inventory-' + id)));
-    const products = [...unified.items, ...data.items.filter(item => !covered.has(item.id))].map(item => ({...item, image_url:item.image_url && item.image_url.startsWith('/api/public/') ? publicApiBase + item.image_url : item.image_url}));
-    if (request === searchRequest) window.renderReactScreen('results', {query:q, products, message:products.length ? 'Цены по источникам; наличие и цена по адресу магазина не подтверждены.' : 'Предложения не найдены или ещё не загружены в базу.'});
+    const {items:products} = await window.staticCatalog.search({q, limit:100000});
+    if (request === searchRequest) window.renderReactScreen('results', {query:q, products, message:products.length ? 'Данные сохранены 27.11.2026. Цены могут измениться; наличие по адресу не подтверждено.' : 'Предложения не найдены или ещё не загружены в базу.'});
   } catch (error) {
-    if (request === searchRequest) window.renderReactScreen('results', {query:q, products:[], message:'Сервер товаров временно недоступен. Попробуйте повторить поиск позже.'});
+    if (request === searchRequest) window.renderReactScreen('results', {query:q, products:[], message:'Не удалось загрузить каталог. Попробуйте ещё раз.'});
   }
 }
+let storeProductsToken = 0, storeProductsTimer;
+function loadStoreProducts(sid, query, offset = 0, previous = []) {
+  const stores = {mag:'Магнит', pya:'Пятёрочка', mar:'Мария-Ра'};
+  const target = document.getElementById('storeReal');
+  if (!target) return;
+  const request = ++storeProductsToken;
+  if (!stores[sid]) { target.textContent = ''; return; }
+  if (!offset) window.renderReactScreen('storeProducts', {loading:true});
+  window.staticCatalog.search({store:stores[sid], category:STORECAT, q:query, offset, limit:30})
+    .then(data => {
+      if (request !== storeProductsToken || !document.getElementById('storeReal')) return;
+      const items = previous.concat(data.items.map(item => ({...item, image_url:item.image_url})));
+      window.renderReactScreen('storeProducts', {products:items, resetKey:sid+'|'+STORECAT+'|'+query, hasMore:data.next_offset !== null, onMore:()=>loadStoreProducts(sid, query, data.next_offset, items)});
+    }).catch(() => { if (request === storeProductsToken && document.getElementById('storeReal')) window.renderReactScreen('storeProducts', {error:'Не удалось загрузить товары магазина.'}); });
+}
+function queueStoreProducts(sid, query) { clearTimeout(storeProductsTimer); storeProductsTimer = setTimeout(()=>loadStoreProducts(sid, query), 250); }
 function renderStoreGrid(sid, q) {
   const toks = norm(q).split(/\s+/).filter(Boolean);
   const base = P.filter(p => p.p[sid] != null);
-  const cats = CATS.filter(c => base.some(p => p.k === c[0]));
+  const cats = CATS.concat([['Другое', '📦']]);
   if (STORECAT && !cats.some(c => c[0] === STORECAT)) STORECAT = '';
   const sc = $('#scats'); if (sc) sc.innerHTML = `<button class="chip ${STORECAT ? '' : 'on'}" data-scat="">Все</button>` + cats.map(([k, e]) => `<button class="chip ${STORECAT === k ? 'on' : ''}" data-scat="${esc(k)}">${e} ${k}</button>`).join('') + '<span style="flex:none;width:8px"></span>' + SORTS.filter(x => x[0] !== 'best').map(([id, n]) => `<button class="chip ${CATSORT === id ? 'on' : ''}" data-ssort="${id}">${n}</button>`).join('');
   const list = sortList(base.filter(p => (!STORECAT || p.k === STORECAT) && toks.every(t => norm(p.n + ' ' + p.k).includes(t))), CATSORT, sid);
@@ -410,8 +442,6 @@ function renderStoreGrid(sid, q) {
 }
 
 /* ================= Карта: «Найти магазин» ================= */
-// Адрес вашего сервера (см. docs/02-BACKEND.md). Пусто = показываем демо-магазины.
-const API_URL = window.GDECHEAPLY_API_BASE || '';
 const CITY = {lat: 55.0302, lng: 82.9204};   // центр Новосибирска
 const WALK_KMH = 5;                           // скорость пешехода для «минут пешком»
 const MAP = {map: null, layer: null, user: null, center: CITY, stores: [], chain: 'all', sel: null, token: 0};
@@ -426,93 +456,26 @@ const walkMin = m => Math.max(1, Math.round(m / (WALK_KMH * 1000 / 60)));
 const kmText = m => m < 950 ? Math.round(m / 10) * 10 + NB + 'м' : (m / 1000).toFixed(1).replace('.', ',') + NB + 'км';
 const leafletOK = () => typeof L !== 'undefined' && !!L.map;
 function mapCenter() { const l = allLocs()[S.loc]; return {lat: l.lat || CITY.lat, lng: l.lng || CITY.lng}; }
-function offsetPoint(c, meters, bearingDeg) {
-  const b = toRad(bearingDeg);
-  return {lat: c.lat + meters * Math.cos(b) / 111320, lng: c.lng + meters * Math.sin(b) / (111320 * Math.cos(toRad(c.lat)))};
-}
-
-// Настоящие магазины Новосибирска (адреса и координаты взяты с карточек 2ГИС, проверьте перед публикацией).
-// Чтобы показывать магазины со всего города, поднимите сервер (docs/02-BACKEND.md) и впишите API_URL.
-const REAL_STORES = [
-  {id:'r1', chain:'mar', address:'ул. Громова, 22/2', lat:54.932938, lng:82.907499},
-  {id:'r2', chain:'mar', address:'ул. Тюленина, 14/1', lat:55.109352, lng:82.944646},
-  {id:'r3', chain:'mar', address:'пр. Карла Маркса, 37/2', lat:54.989144, lng:82.904925},
-  {id:'r4', chain:'mar', address:'ул. Большая, 608', lat:55.028319, lng:82.809248},
-  {id:'r5', chain:'pya', address:'Красный проспект, 218/2', lat:55.066442, lng:82.91135},
-  {id:'r6', chain:'pya', address:'ул. Фрунзе, 88', lat:55.037701, lng:82.934687},
-  {id:'r7', chain:'mag', address:'ул. Пролетарская, 50', lat:55.024829, lng:82.955925},
-  {id:'r8', chain:'mag', address:'ул. Челюскинцев, 14/1', lat:55.038093, lng:82.90254},
-  {id:'r9', chain:'mag', address:'ул. Учительская, 46', lat:55.083668, lng:82.962908},
-  {id:'r10', chain:'fix', address:'ул. Ленинградская, 71/1', lat:55.01637, lng:82.951355},
-  {id:'r11', chain:'fix', address:'ул. Объединения, 35/3', lat:55.099183, lng:82.971231},
-  {id:'r12', chain:'fix', address:'ул. Станиславского, 40/1', lat:54.968942, lng:82.872558},
-  {id:'r13', chain:'chi', address:'Красный проспект, 218/2', lat:55.066809, lng:82.9115},
-  {id:'r14', chain:'chi', address:'ул. Плахотного, 2а', lat:54.986228, lng:82.861207},
-  {id:'r15', chain:'chi', address:'ул. Объединения, 94', lat:55.097733, lng:82.968274},
-  {id:'r16', chain:'chi', address:'ул. Есенина, 12/4', lat:55.046794, lng:82.986022}
-];
-function realStores() { return REAL_STORES.map(s => ({...s, name: SM[s.chain].n})); }
-
-// Демо-магазины вокруг точки (больше не используются, оставлены для справки). Настоящие приходят с вашего сервера (fetchStores).
-const STREETS = ['ул. Ленина', 'Красный пр.', 'ул. Кирова', 'ул. Фрунзе', 'ул. Советская', 'ул. Орджоникидзе', 'ул. Депутатская', 'Вокзальная магистраль', 'ул. Сибирская'];
-function demoStores(c) {
-  const out = [], mins = allLocs()[S.loc].m;
-  STORES.forEach((s, si) => {
-    const base = mins[s.id] * WALK_KMH * 1000 / 60;      // метры, чтобы ближайший совпадал с «минутами» в ценах
-    [1, 1.9, 3.1].forEach((k, j) => {
-      const p = offsetPoint(c, base * k, (si * 72 + j * 131 + 20) % 360);
-      out.push({id: s.id + '-' + (j + 1), chain: s.id, name: s.n, address: STREETS[(si * 3 + j) % STREETS.length] + ', ' + (10 + (si * 17 + j * 29) % 90), lat: p.lat, lng: p.lng});
-    });
-  });
-  return out;
-}
-
-// Все магазины сетей в городе: пока телефон в интернете, берём их из OpenStreetMap (Overpass API), результат хранится сутки.
-// Если интернета нет или сервис недоступен, показываем встроенный список REAL_STORES.
-const OSM_CHAINS = [['pya', /пят[её]рочка/i], ['mag', /магнит/i], ['mar', /мария[-\s]?ра/i], ['fix', /fix[\s-]?price|фикс[\s-]?прайс/i], ['chi', /чижик/i]];
-async function fetchOSM(c) {
-  const key = 'gd_osm', la = c.lat.toFixed(2), lo = c.lng.toFixed(2), cached = load(key, null);
-  if (cached && cached.la === la && cached.lo === lo && Date.now() - cached.t < 864e5 && Array.isArray(cached.list)) return cached.list;
-  const q = `[out:json][timeout:20];nwr["shop"]["name"~"Пят[её]рочка|Магнит|Мария-?Ра|Fix ?Price|Фикс ?Прайс|Чижик",i](around:5000,${c.lat},${c.lng});out center 150;`;
-  const ctl = new AbortController(), tm = setTimeout(() => ctl.abort(), 9000);
-  try {
-    const r = await fetch('https://overpass-api.de/api/interpreter?data=' + encodeURIComponent(q), {signal: ctl.signal});
-    if (!r.ok) return null;
-    const j = await r.json(), out = [];
-    (j.elements || []).forEach(e => {
-      const t = e.tags || {}, nm = String(t.name || ''), lat = e.lat != null ? e.lat : e.center && e.center.lat, lng = e.lon != null ? e.lon : e.center && e.center.lon;
-      if (/косметик/i.test(nm) || !isFinite(lat) || !isFinite(lng)) return;
-      const ch = OSM_CHAINS.find(x => x[1].test(nm)); if (!ch) return;
-      const addr = [t['addr:street'], t['addr:housenumber']].filter(Boolean).join(', ');
-      out.push({id: 'osm-' + e.type + '-' + e.id, chain: ch[0], name: SM[ch[0]].n, address: addr || 'адрес уточняется', lat, lng});
-    });
-    if (out.length) save(key, {la, lo, t: Date.now(), list: out});
-    return out.length ? out : null;
-  } catch (err) { return null; } finally { clearTimeout(tm); }
-}
-async function allStores(c) {
-  const base = realStores(), live = await fetchOSM(c);
-  if (!live) return base;
-  const extra = base.filter(b => !live.some(l => l.chain === b.chain && distM(b, l) < 60));
-  return live.concat(extra);
-}
-// Ответ сервера — это ЧУЖИЕ данные: ничего не вставляем в HTML без esc() и приводим числа через Number().
-async function fetchStores(c) {
-  try {
-    const params = new URLSearchParams({lat: c.lat, lon: c.lng, radius_m: 5000});
-    const response = await fetch(`${API_URL}/api/public/stores/nearby?${params}`, {headers:publicApiHeaders});
-    if (!response.ok) throw new Error('API unavailable');
-    const data = await response.json();
-    if (!Array.isArray(data.items)) throw new Error('Invalid response');
-    const chains = {pyaterochka: 'pya', magnit: 'mag'};
-    const fromDb = data.items.filter(s => chains[s.store_code] && Number.isFinite(Number(s.lat)) && Number.isFinite(Number(s.lng)))
-      .map(s => ({id: 'db-' + s.id, chain: chains[s.store_code], name: s.store, address: s.address, lat: s.lat, lng: s.lng}));
-    const other = (await allStores(c)).filter(s => !['pya', 'mag'].includes(s.chain));
-    return fromDb.concat(other);
-  } catch (e) {
-    toast('Сервер недоступен — показаны доступные адреса');
-    return allStores(c);
+const storeChains = {pyaterochka:'pya', magnit:'mag', 'maria-ra':'mar', 'fix-price':'fix', chizhik:'chi'};
+let bundledStoresPromise;
+function fetchStores() {
+  if (!bundledStoresPromise) {
+    bundledStoresPromise = fetch(new URL('store-locations.json?v=20261127-audit', document.baseURI), {cache:'no-store'})
+      .then(response => {
+        if (!response.ok) throw new Error('Store data unavailable');
+        return response.json();
+      })
+      .then(items => items.filter(s => s.status === 'listed' && storeChains[s.code] &&
+        Number.isFinite(s.lat) && Number.isFinite(s.lng))
+        .map(s => ({id:'local-'+s.id, chain:storeChains[s.code], name:SM[storeChains[s.code]].n,
+          address:s.address, lat:s.lat, lng:s.lng})))
+      .catch(() => {
+        bundledStoresPromise = null;
+        toast('Не удалось загрузить адреса магазинов');
+        return [];
+      });
   }
+  return bundledStoresPromise;
 }
 
 function initMap() {
@@ -521,17 +484,17 @@ function initMap() {
   MAP.map = L.map('mapview', {zoomControl: false}).setView([c.lat, c.lng], 15);
   L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {maxZoom: 19, attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'}).addTo(MAP.map);
   MAP.layer = L.layerGroup().addTo(MAP.map);
+  let markerTimer;
+  MAP.map.on('moveend zoomend', () => { clearTimeout(markerTimer); markerTimer = setTimeout(drawMapMarkers, 80); });
 }
 const visibleStores = () => MAP.stores.filter(s => MAP.chain === 'all' || s.chain === MAP.chain).slice(0, 30);
 
 async function loadStores(fit) {
   const c = MAP.user || mapCenter(), tk = ++MAP.token;
-  const raw = await fetchStores(c);
-  if (tk !== MAP.token) return;                          // пришёл более новый запрос — этот выбрасываем
+  const raw = await fetchStores();
+  if (tk !== MAP.token) return;
   MAP.center = c;
-  MAP.stores = raw.map(s => ({id: String(s.id), chain: String(s.chain), name: String(s.name || ''), address: String(s.address || ''), lat: Number(s.lat), lng: Number(s.lng)}))
-    .filter(s => SM[s.chain] && isFinite(s.lat) && isFinite(s.lng))
-    .map(s => ({...s, d: distM(c, s)})).sort((a, b) => a.d - b.d);
+  MAP.stores = raw.map(s => ({...s, d:distM(c, s)})).sort((a, b) => a.d - b.d);
   drawAll(fit !== false);
 }
 
@@ -547,16 +510,36 @@ function drawAll(fit) {
       <div class="sa"><button class="mini ok" data-act="pickStore" data-arg="${esc(s.id)}">Выбрать</button><button class="mini" data-act="route" data-arg="${esc(s.id)}">Маршрут</button></div>
     </div>`).join('') : '<div class="empty"><em>🤷</em>Магазинов рядом не нашли.<br>Попробуйте другой адрес.</div>';
   if (!MAP.map) return;
-  MAP.layer.clearLayers();
-  L.marker([c.lat, c.lng], {icon: L.divIcon({className: 'mkw', html: '<div class="me"></div>', iconSize: [18, 18], iconAnchor: [9, 9]}), interactive: false, keyboard: false}).addTo(MAP.layer);
-  vis.forEach(s => {
-    const icon = L.divIcon({className: 'mkw', html: `<div class="mk ${s.id === MAP.sel ? 'sel' : ''}" style="background:#fff"><img src="${STORE_PNG[s.chain]}" alt="" referrerpolicy="no-referrer" style="position:absolute;left:0;top:0;width:100%;height:100%;max-width:none;object-fit:contain;display:block;border-radius:50%;background:#fff" onerror="mkErr(this,'${s.chain}')"></div>`, iconSize: [36, 36], iconAnchor: [18, 18]});
-    L.marker([s.lat, s.lng], {icon, title: s.name}).addTo(MAP.layer).on('click', () => selectStore(s.id, true));
-  });
   if (fit) {
     const pts = [[c.lat, c.lng]].concat(vis.slice(0, 6).map(s => [s.lat, s.lng]));
     MAP.map.fitBounds(L.latLngBounds(pts), {padding: [40, 40], maxZoom: 16});
   }
+  drawMapMarkers();
+}
+
+function drawMapMarkers() {
+  if (!MAP.map || !MAP.layer || !MAP.center) return;
+  const map = MAP.map, c = MAP.center, bounds = map.getBounds().pad(0.15);
+  MAP.layer.clearLayers();
+  L.marker([c.lat, c.lng], {icon: L.divIcon({className:'mkw', html:'<div class="me"></div>', iconSize:[18,18], iconAnchor:[9,9]}), interactive:false, keyboard:false}).addTo(MAP.layer);
+  const cells = new Map(), zoom = map.getZoom();
+  MAP.stores.filter(s => (MAP.chain === 'all' || s.chain === MAP.chain) && bounds.contains([s.lat, s.lng])).forEach(s => {
+    const point = map.latLngToContainerPoint([s.lat, s.lng]);
+    const key = zoom >= 18 ? s.id : Math.floor(point.x / 64) + ':' + Math.floor(point.y / 64);
+    if (!cells.has(key)) cells.set(key, []);
+    cells.get(key).push(s);
+  });
+  cells.forEach(stores => {
+    if (stores.length > 1) {
+      const lat = stores.reduce((v,s) => v+s.lat,0)/stores.length, lng = stores.reduce((v,s) => v+s.lng,0)/stores.length;
+      const icon = L.divIcon({className:'mkw', html:`<div class="store-cluster">${stores.length}</div>`, iconSize:[42,42], iconAnchor:[21,21]});
+      L.marker([lat,lng], {icon, title: 'Магазинов: ' + stores.length}).addTo(MAP.layer).on('click', () => map.setView([lat,lng], Math.min(18, zoom+2)));
+      return;
+    }
+    const s = stores[0];
+    const icon = L.divIcon({className:'mkw', html:`<div class="mk ${s.id === MAP.sel ? 'sel' : ''}" style="background:#fff"><img src="${STORE_PNG[s.chain]}" alt="" referrerpolicy="no-referrer" style="position:absolute;left:0;top:0;width:100%;height:100%;max-width:none;object-fit:contain;display:block;border-radius:50%;background:#fff" onerror="mkErr(this,'${s.chain}')"></div>`, iconSize:[36,36], iconAnchor:[18,18]});
+    L.marker([s.lat,s.lng], {icon,title:s.name}).addTo(MAP.layer).on('click', () => selectStore(s.id,true));
+  });
 }
 
 function selectStore(id, fromMarker) {
@@ -663,7 +646,9 @@ function show(id) {
   if (tg && tg.BackButton) { try { stack.length > 1 ? tg.BackButton.show() : tg.BackButton.hide(); } catch(e){} }
 }
 function go(id, a) { stack.push(id); arg[id] = a; show(id); }
-function back() { if (stack.length > 1) { stack.pop(); show(stack[stack.length - 1]); } }
+let storeScrollPosition = 0;
+window.openStoreProduct = product => { storeScrollPosition = window.scrollY; go('storeProduct', product); };
+function back() { if (stack.length > 1) { const previous = stack.pop(); if (previous === 'storeProduct' && stack[stack.length - 1] === 'store') { $$('.screen').forEach(s => s.classList.toggle('on', s.id === 'store')); refreshBadges(); window.scrollTo(0, storeScrollPosition); if (tg && tg.BackButton) { try { stack.length > 1 ? tg.BackButton.show() : tg.BackButton.hide(); } catch(e){} } } else show(stack[stack.length - 1]); } }
 function goRoot(id) { stack = [id]; show(id); }
 if (tg && tg.BackButton) { try { tg.BackButton.onClick(back); } catch(e){} }
 
@@ -697,7 +682,7 @@ document.addEventListener('click', e => {
   const ss = t.closest('[data-sel-store]'); if (ss) { const a = typeof arg.product === 'object' && arg.product ? arg.product : {pid: +arg.product}; arg.product = {pid: a.pid, sel: ss.dataset.selStore}; R.product(arg.product); return; }
   const so = t.closest('[data-sort]'); if (so) { CATSORT = so.dataset.sort; R.category(arg.category); return; }
   const ssi = t.closest('[data-ssort]'); if (ssi) { CATSORT = ssi.dataset.ssort; const q = $('#sq'); renderStoreGrid(arg.store, q ? q.value : ''); return; }
-  const sct = t.closest('[data-scat]'); if (sct) { STORECAT = sct.dataset.scat; const q = $('#sq'); renderStoreGrid(arg.store, q ? q.value : ''); return; }
+  const sct = t.closest('[data-scat]'); if (sct) { clearTimeout(storeProductsTimer); STORECAT = sct.dataset.scat; const q = $('#sq'); renderStoreGrid(arg.store, q ? q.value : ''); loadStoreProducts(arg.store, q ? q.value : ''); return; }
   const ch = t.closest('[data-chip]'); if (ch) { const i = $('#q'); i.value = ch.dataset.chip; renderResults(i.value); return; }
   if (t.closest('[data-back]')) { back(); return; }
   const ac = t.closest('[data-act]');
@@ -712,7 +697,7 @@ document.addEventListener('click', e => {
 });
 document.addEventListener('input', e => {
   if (e.target.id === 'q') renderResults(e.target.value);
-  else if (e.target.id === 'sq') renderStoreGrid(e.target.dataset.sid, e.target.value);
+  else if (e.target.id === 'sq') { renderStoreGrid(e.target.dataset.sid, e.target.value); queueStoreProducts(e.target.dataset.sid, e.target.value); }
 });
 
 function act(name, a) {
