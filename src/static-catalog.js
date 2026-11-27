@@ -9,6 +9,16 @@ const products = () => productsPromise ||= read('products.json').then(items => i
   ...item, has_local_photo: !!item.image_url && item.image_url.startsWith('product-images/'), image_url: item.image_url ? new URL(item.image_url, document.baseURI).href : null,
 })));
 const normalize = value => (value || '').toLocaleLowerCase('ru').replaceAll('ё', 'е').trim();
+const wordBoundary = char => !char || !/[\p{L}\p{N}]/u.test(char);
+function relevance(name, query) {
+  const text = normalize(name), index = text.indexOf(query);
+  if (text === query) return 0;
+  if (index === 0 && wordBoundary(text[query.length])) return 1;
+  if (index === 0) return 2;
+  if (index >= 0 && wordBoundary(text[index - 1]) && wordBoundary(text[index + query.length])) return 3;
+  if (index >= 0 && wordBoundary(text[index - 1])) return 4;
+  return 5;
+}
 
 window.staticCatalog = {
   async search({q = '', category = '', store = '', sort = 'default', offset = 0, limit = 40} = {}) {
@@ -19,6 +29,10 @@ window.staticCatalog = {
       (!store || normalize(item.store).includes(normalize(store)) || (store === 'Магнит' && item.store === 'magnit.ru') || (store === 'Пятёрочка' && item.store === '5ka.ru')));
     items.sort((a, b) => {
       if (sort === 'default') {
+        if (needle) {
+          const relevanceOrder = relevance(a.name, needle) - relevance(b.name, needle);
+          if (relevanceOrder) return relevanceOrder;
+        }
         const photoOrder = Number(b.has_local_photo) - Number(a.has_local_photo);
         if (photoOrder) return photoOrder;
       }

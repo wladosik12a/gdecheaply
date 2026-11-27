@@ -312,7 +312,7 @@ const R = {
   editprofile() { window.renderReactScreen('editprofile', {name: userName(), avatar: avatarHTML()}); },
   settings() { window.renderReactScreen('settings', {themes: themeBlock()}); },
   about() { window.renderReactScreen('about', {}); },
-  location() { const recent = load('gd_recent_addresses', []); window.renderReactScreen('location', {locations: Array.isArray(recent) ? recent : [], selected: allLocs()[S.loc].n}); },
+  location() { const recent = load('gd_recent_addresses', []), current = allLocs()[S.loc]; window.renderReactScreen('location', {locations: Array.isArray(recent) ? recent : [], selected: current.n, center:{lat:current.lat || 55.0302,lng:current.lng || 82.9204}}); },
   search() { window.renderReactScreen('search', {}); document.getElementById('q').value = ''; renderResults(''); setTimeout(() => $('#q')?.focus(), 80); },
   history() { window.renderReactScreen('history', {orders: S.orders.map(o => ({date:o.d, count:goods(o.items.length), stores:orderStores(o), sum:rub(orderSum(o)), pictures:o.items.slice(0,4).map(([pid]) => pic(P[pid-1])), remaining:Math.max(0,o.items.length-4)}))}); },
   order(i) {
@@ -562,6 +562,15 @@ function routeTo(id) {                                   // пешеходный
   window.open(url, '_blank', 'noopener');
 }
 
+window.saveMapLocation = function(point, label) {
+  if (!Number.isFinite(point.lat) || !Number.isFinite(point.lng)) return;
+  const coords = `${point.lat.toFixed(5)}, ${point.lng.toFixed(5)}`;
+  const name = label && label.startsWith('Рядом: ') ? `${label} (${coords})` : `Точка на карте: ${coords}`;
+  const location = {n:name, lat:point.lat, lng:point.lng, m:{}};
+  const stored = load('gd_recent_addresses', []), recent = Array.isArray(stored) ? stored : [];
+  save('gd_recent_addresses', [location, ...recent.filter(x => x.lat !== point.lat || x.lng !== point.lng)].slice(0,10));
+  S.extra.push(location); S.loc = allLocs().length - 1; MAP.user = null; persist(); toast('Точка сохранена'); back();
+};
 async function addAddress() {
   const input = document.getElementById('locInp'); const address = input.value.trim().replace(/\s+/g, ' ');
   if (input.dataset.selectedAddress) {

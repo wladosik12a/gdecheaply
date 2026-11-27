@@ -68,9 +68,37 @@ script.src = `${import.meta.env.BASE_URL}legacy.js?v=static-20261127`;
 document.body.appendChild(script);
 
 
-function Location({ locations, selected }) {
+function LocationMap({ center }) {
+ const [open,setOpen] = React.useState(false), [point,setPoint] = React.useState(null), [label,setLabel] = React.useState(''), [loading,setLoading] = React.useState(false);
+ const mapNode=React.useRef(null), current=React.useRef(0);
+ React.useEffect(()=>{
+  if(!open || !mapNode.current || !window.L) return;
+  const map=window.L.map(mapNode.current).setView([center.lat,center.lng], 15);
+  window.L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:19,attribution:'© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'}).addTo(map);
+  let marker;
+  map.on('click', async e=>{
+   const p={lat:e.latlng.lat,lng:e.latlng.lng}; const token=++current.current;
+   if(marker) marker.setLatLng(e.latlng); else marker=window.L.marker(e.latlng).addTo(map);
+   setPoint(p);setLabel('');setLoading(true);
+   try {
+    const params=new URLSearchParams({lat:String(p.lat),lon:String(p.lng),limit:'1',lang:'ru'});
+    const response=await fetch('https://photon.komoot.io/reverse?'+params,{signal:AbortSignal.timeout(8000)});
+    if(!response.ok) throw Error('address unavailable');
+    const data=await response.json(); const properties=data.features?.[0]?.properties || {};
+    const address=[properties.city || properties.town || properties.village, properties.street || properties.name, properties.housenumber && 'д. '+properties.housenumber].filter(Boolean).join(', ');
+    if(token===current.current)setLabel(address ? 'Рядом: '+address : 'Адрес не найден — будут сохранены координаты');
+   } catch { if(token===current.current)setLabel('Адрес не найден — будут сохранены координаты'); }
+   finally { if(token===current.current)setLoading(false); }
+  });
+  setTimeout(()=>map.invalidateSize(),50);
+  return ()=>{current.current++;map.remove()};
+ },[open,center.lat,center.lng]);
+ return <><button type="button" className="btn sec2" style={{marginTop:10}} onClick={()=>setOpen(v=>!v)}>{open?'Скрыть карту':'🗺️ Выбрать точку на карте'}</button>{open && (window.L ? <><p className="hint">Нажмите на карту, чтобы поставить метку.</p><div ref={mapNode} style={{height:300,width:'100%',borderRadius:18,overflow:'hidden'}} aria-label="Карта выбора местоположения"/><p className="hint" role="status">{loading?'Ищем ближайший адрес…':label || 'Выберите точку на карте'}</p>{point && <button type="button" className="btn" onClick={()=>window.saveMapLocation?.(point,label)}>Подтвердить точку</button>}</> : <p className="hint">Не удалось загрузить карту. Проверьте подключение к интернету.</p>)}</>;
+}
+function Location({ locations, selected, center }) {
   return <>
     <button className="btn sec2" data-act="autoLoc">📍 Определить автоматически</button>
+    <LocationMap center={center}/>
     {locations.length >= 2 && <><div className="lbl">НЕДАВНИЕ АДРЕСА</div><div className="card list">{locations.map((location, index) => <button key={index} className="rowb" data-loc={index}><em>📍</em>{location.n}<i className={'dot ' + (location.n === selected ? 'on' : '')} /></button>)}</div></>}
     <div className="lbl">ДРУГОЙ АДРЕС</div><AddressInput />
     <div style={{height:12}} /><button className="btn" data-act="addLoc">Добавить и выбрать</button>
